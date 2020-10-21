@@ -1,0 +1,5 @@
+ahmed@Sabry:~/TheYoctoProject/poky$ ls meta/conf/machine/*.conf
+meta/conf/machine/qemuarm64.conf   meta/conf/machine/qemuppc.conf
+meta/conf/machine/qemuarm.conf     meta/conf/machine/qemux86-64.conf
+meta/conf/machine/qemumips64.conf  meta/conf/machine/qemux86.conf
+meta/conf/machine/qemumips.conf

@@ -1,0 +1,19 @@
+$ man 2 read # read the manual section 2 for the read
+# output of the command
+READ(2)                 Linux Programmer's Manual                       READ(2)
+NAME
+    read - read from a file descriptor
+SYNOPSIS
+#include <unistd.h>
+ssize_t read(int fd, void *buf, size_t count);
+DESCRIPTION
+
+ read() attempts to read up to count bytes from file descriptor fd into the buffer starting at buf.
+
+ ...
+
+
+RETRUN VALUE
+On success, the number of bytes read is returned (zero indicates end of file), and the file position is advanced by this number. It is not an error if this number is smaller than the number of bytes requested; this may happen for example because fewer bytes are actually available right now (maybe because we were close to end-of-file, or because we are reading from a pipe, or from a terminal), or because read() was interrupted by a signal. On error, -1 is returned, and errno is set appropriately. In this case it is left unspecified whether the file position (if any) changes.
+
+

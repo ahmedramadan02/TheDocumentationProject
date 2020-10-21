@@ -1,0 +1,29 @@
+
+/dts-v1/;
+/include/ "common.dtsi";
+
+/ {
+    node1 {
+        a-string-property = "A string";
+        a-string-list-property = "first string", "second string";
+        a-byte-data-property = [0x01 0x23 0x34 0x56];
+        cousin: child-node1 {
+            first-child-property;
+            second-child-property = <1>;
+            a-string-property = "Hello, world";
+        };
+        child-node2 {
+        };
+    };
+    node2 {
+        an-empty-property;
+        a-cell-property = <1 2 3 4>; /* each number (cell) is a uint32 */
+        child-node1 {
+            my-cousin = <&cousin>;
+        };
+    };
+};
+
+/node2 {
+    another-property-for-node2;
+};

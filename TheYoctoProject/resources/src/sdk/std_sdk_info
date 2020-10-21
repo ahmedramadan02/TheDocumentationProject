@@ -1,0 +1,8 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ ls tmp/deploy/sdk/
+poky-glibc-x86_64-example-image-armv5e-toolchain-2.2.4.host.manifest
+poky-glibc-x86_64-example-image-armv5e-toolchain-2.2.4.sh
+poky-glibc-x86_64-example-image-armv5e-toolchain-2.2.4.target.manifest
+
+ahmed@Sabry:~/TheYoctoProject/poky/build$ ls -hla tmp/deploy/sdk/poky-glibc-x86_64-example-image-armv5e-toolchain-2.2.4.sh
+-rwxr-xr-x 2 ahmed ahmed 115M مار 25 18:57 tmp/deploy/sdk/poky-glibc-x86_64-example-image-armv5e-toolchain-2.2.4.sh
+ahmed@Sabry:~/TheYoctoProject/poky/build$ 

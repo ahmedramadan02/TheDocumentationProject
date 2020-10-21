@@ -1,0 +1,22 @@
+ahmed@Sabry:~/TheYoctoProject/poky$ git clone git://git.yoctoproject.org/meta-raspberrypi -b morty
+
+#Now we have the meta-raspberry pi layer
+ahmed@Sabry:~/TheYoctoProject/poky$ ls
+bitbake        meta-mylayer      meta-yocto                README.hardware
+build          meta-poky         meta-yocto-bsp            scripts
+documentation  meta-raspberrypi  oe-init-build-env
+LICENSE        meta-selftest     oe-init-build-env-memres
+meta           meta-skeleton     README
+
+# and we have the configuration of our pi machines
+ahmed@Sabry:~/TheYoctoProject/poky$ ls meta-raspberrypi/conf/machine/*.conf
+meta-raspberrypi/conf/machine/raspberrypi0.conf
+meta-raspberrypi/conf/machine/raspberrypi0-wifi.conf
+meta-raspberrypi/conf/machine/raspberrypi2.conf
+meta-raspberrypi/conf/machine/raspberrypi3-64.conf
+meta-raspberrypi/conf/machine/raspberrypi3.conf
+meta-raspberrypi/conf/machine/raspberrypi4-64.conf
+meta-raspberrypi/conf/machine/raspberrypi4.conf
+meta-raspberrypi/conf/machine/raspberrypi-cm3.conf
+meta-raspberrypi/conf/machine/raspberrypi-cm.conf
+meta-raspberrypi/conf/machine/raspberrypi.conf

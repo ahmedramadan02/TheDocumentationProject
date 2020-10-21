@@ -1,0 +1,6 @@
+\$\@		the current target
+$^, $< 	each of the prerequisites
+
+Example:
+%.o: %.c
+	$(CC) -c $^ $(CFLAGS) -o $@

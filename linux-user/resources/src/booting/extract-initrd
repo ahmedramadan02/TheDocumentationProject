@@ -1,0 +1,26 @@
+ubuntu@ip-172-31-46-156:~$ ls /boot/
+System.map-4.15.0-1051-aws  initrd.img-4.15.0-1051-aws
+System.map-4.15.0-1057-aws  initrd.img-4.15.0-1057-aws
+config-4.15.0-1051-aws      vmlinuz-4.15.0-1051-aws
+config-4.15.0-1057-aws      vmlinuz-4.15.0-1057-aws
+grub
+
+ubuntu@ip-172-31-46-156:~$ mkdir /tmp/testramfs
+ubuntu@ip-172-31-46-156:~$ cd /tmp/testramfs/
+ubuntu@ip-172-31-46-156:/tmp/testramfs$ cp /boot/initrd.img-4.15.0-1057-aws /tmp/testramfs/i.gz
+ubuntu@ip-172-31-46-156:/tmp/testramfs$ file i.gz
+i.gz: gzip compressed data, last modified: Fri Jan 10 22:19:58 2020, from Unix
+
+ubuntu@ip-172-31-46-156:/tmp/testramfs$ gunzip i.gz
+ubuntu@ip-172-31-46-156:/tmp/testramfs$ file i
+i: ASCII cpio archive (SVR4 with no CRC)
+
+ubuntu@ip-172-31-46-156:/tmp/testramfs$ cpio -i --no-absolute-filenames <i
+107606 blocks
+
+ubuntu@ip-172-31-46-156:/tmp/testramfs$ ls
+# Those are the file system that will be loaded to the RAM
+bin  conf  etc  i  init  lib  lib64  run  sbin  scripts  usr  var
+
+ubuntu@ip-172-31-46-156:/tmp/testramfs$ ls -l init
+-rwxr-xr-x 1 ubuntu ubuntu 6682 Jan 17 20:59 init # This is the systemd file

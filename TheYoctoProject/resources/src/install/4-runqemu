@@ -1,0 +1,12 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ runqemu qemux86 nographic
+
+#After some boot messages
+#Here we are!
+Poky (Yocto Project Reference Distro) 2.2.4 qemux86 /dev/ttyS0
+
+qemux86 login: root
+root@qemux86:~# 
+root@qemux86:~# uname -a
+Linux qemux86 4.8.26-yocto-standard #1 SMP PREEMPT Sat Mar 14 14:07:45 EET 2020 i686 GNU/Linux
+root@qemux86:~# 
+

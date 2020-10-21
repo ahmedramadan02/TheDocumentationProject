@@ -1,0 +1,4 @@
+Function "f" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) [answered N; input not from terminal]
+gdb-backtrace-script:6: Error in sourced command file:
+Argument required (one or more breakpoint numbers).

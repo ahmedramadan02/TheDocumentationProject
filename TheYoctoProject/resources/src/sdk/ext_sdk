@@ -1,0 +1,1 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ bitbake example-image -c populate_sdk_ext

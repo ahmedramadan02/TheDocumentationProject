@@ -1,0 +1,7 @@
+ahmed@Sabry:~/TheYoctoProject/poky$ bitbake-layers add-layer meta-mylayer
+
+# Or you can make it manually by appending your layer to bblayers.conf file
+ahmed@Sabry:~/TheYoctoProject/poky$ vim build/conf/bblayers.conf
+
+# then re-parse again
+ahmed@Sabry:~/TheYoctoProject/poky$ bitbake example

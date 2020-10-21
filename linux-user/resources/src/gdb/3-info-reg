@@ -1,0 +1,39 @@
+$ gdb -q ./output.exe
+Reading symbols from ./output.exe...done.
+(gdb) break main
+Breakpoint 1 at 0x401574: file example.cpp, line 4.
+(gdb) run
+Starting program: /c/Users/aramadan/Desktop/TheDocumentationProject/linux-user/resources/src/gdb/output.exe
+[New Thread 10096.0x898]
+[New Thread 10096.0x2c70]
+
+Thread 1 hit Breakpoint 1, main (argc=1, argv=0xbf14e0) at example.cpp:4
+4           for(i=0; i < 10; i++)
+(gdb) info register
+rax            0x1                 1
+rbx            0x0                 0
+rcx            0x1                 1
+rdx            0xbf14e0            12522720
+rsi            0x5a                90
+rdi            0xbf1520            12522784
+rbp            0x65fe20            0x65fe20
+rsp            0x65fdf0            0x65fdf0
+r8             0xbf1e40            12525120
+r9             0x13                19
+r10            0x0                 0
+r11            0x65fc88            6683784
+r12            0x0                 0
+r13            0x10                16
+r14            0x0                 0
+r15            0x0                 0
+rip            0x401574            0x401574 <main(int, char**)+20>
+eflags         0x202               [ IF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x2b                43
+es             0x2b                43
+fs             0x53                83
+gs             0x2b                43
+
+(gdb) info register rip # get a certain register value
+rip            0x401574            0x401574 <main(int, char**)+20>

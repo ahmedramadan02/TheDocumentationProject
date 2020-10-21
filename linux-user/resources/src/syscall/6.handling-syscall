@@ -1,0 +1,7 @@
+#include <stdio.h>
+main (){
+	int a;
+	__asm__("movl $337, %eax");
+	__asm__("int $0x80");
+	__asm__("mov %eax, -4(%ebp)"); //copy the return value of the system call
+}

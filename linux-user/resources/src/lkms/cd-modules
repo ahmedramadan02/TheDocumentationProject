@@ -1,0 +1,20 @@
+ubuntu@ip-172-31-46-156:/lib/modules$ ls
+4.15.0-1051-aws  4.15.0-1057-aws
+# Two folder for each kernel image
+
+ubuntu@ip-172-31-46-156:/lib/modules$ uname -r
+4.15.0-1057-aws
+
+ubuntu@ip-172-31-46-156:/lib/modules/4.15.0-1057-aws$ ls
+build          modules.alias.bin    modules.dep.bin  modules.symbols
+initrd         modules.builtin      modules.devname  modules.symbols.bin
+kernel         modules.builtin.bin  modules.order    vdso
+modules.alias  modules.dep          modules.softdep
+
+ubuntu@ip-172-31-46-156:/lib/modules/4.15.0-1057-aws$ cd kernel
+ubuntu@ip-172-31-46-156:/lib/modules/4.15.0-1057-aws/kernel$ ls
+arch  block  crypto  drivers  fs  lib  net  spl  virt  zfs
+# The kernel modules are grouped according to their function.
+
+ubuntu@ip-172-31-46-156:/lib/modules/4.15.0-1057-aws/kernel$ find . -name '*.ko' | wc -l
+949 # we have this number of .ko module files

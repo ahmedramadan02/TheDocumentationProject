@@ -1,0 +1,1 @@
+ubuntu@ip-172-31-46-156:/proc$ echo hello > /dev/null

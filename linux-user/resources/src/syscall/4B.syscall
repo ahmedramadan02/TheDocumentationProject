@@ -1,0 +1,16 @@
+main(){
+	int a;
+	a = sys_newcalls();
+}
+
+main:
+	pushl	%ebp
+	movl	%esp, %ebx
+	subl	$4, %ebp
+	
+    // Copy system caller ID to eax (int) accumulator
+	movl 	$314, %eax
+    // Trigger the context switch, and moving to the exception handler 
+	int	    $0x80       
+
+	movl	-4(%ebp), %eax

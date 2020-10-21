@@ -1,0 +1,4 @@
+$ mkdir uboot-src
+$ cd uboot-src
+$ git clone -b 2016.11-toradex git://git.toradex.com/u-boot-toradex.git
+$ cd u-boot-toradex

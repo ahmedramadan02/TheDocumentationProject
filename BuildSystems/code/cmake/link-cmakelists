@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.12)
+project(SimpleProject VERSION 1.0.0)
+
+#added line to create libfoo with the respective hpp and cpp files
+add_library(foo
+    libfoo.cpp
+    libfoo.hpp
+)
+
+add_executable(cmake-test main.cpp)
+
+#added line to link with the libfoo
+target_link_libraries(cmake-test PRIVATE foo)

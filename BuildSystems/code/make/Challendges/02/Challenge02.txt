@@ -1,0 +1,16 @@
+In this challenge, you are asked to:
+1. Define the following targets
+# target for every object file (use %.c)
+# all target: to link all the .o files and generate .out file
+# clean target to remove all the .o files, and the target file
+
+2. Define one varaible for the PLATFORM which will be used to choose which platform is chosen
+# mingw32-make PLATFORM=ARM
+in case of WINDOWS -> use gcc complier, and ld linker
+in case of ARM     -> use arm-none-eabi-gcc, and arm-none-eabi-ld
+
+3. Define a varaible "BUILD_MODE" which checks if it's build for debug or release and change the options accordingly
+
+4. use the sources.mk file to contains all the source files, and all the headerfiles
+
+5. after the build let the make to move the file into (output) folder

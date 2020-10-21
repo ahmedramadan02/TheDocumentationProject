@@ -1,0 +1,20 @@
+ubuntu@ip-172-31-46-156:~$ ls -ls /etc | grep ssh
+ 4 drwxr-xr-x  2 root root       4096 Jan 10 22:16 ssh
+
+ubuntu@ip-172-31-46-156:/etc/ssh$ ls -als
+total 596
+  4 drwxr-xr-x   2 root root   4096 Jan 10 22:16 .
+  4 drwxr-xr-x 108 root root   4096 Feb 29 13:24 ..
+544 -rw-r--r--   1 root root 553122 Mar  4  2019 moduli
+  4 -rw-r--r--   1 root root   1580 Mar  4  2019 ssh_config
+  4 -rw-------   1 root root    668 Jan 10 21:59 ssh_host_dsa_key
+  4 -rw-r--r--   1 root root    611 Jan 10 21:59 ssh_host_dsa_key.pub
+  4 -rw-------   1 root root    227 Jan 10 21:59 ssh_host_ecdsa_key
+  4 -rw-r--r--   1 root root    183 Jan 10 21:59 ssh_host_ecdsa_key.pub
+  4 -rw-------   1 root root    411 Jan 10 21:59 ssh_host_ed25519_key
+  4 -rw-r--r--   1 root root    103 Jan 10 21:59 ssh_host_ed25519_key.pub
+  4 -rw-------   1 root root   1679 Jan 10 21:59 ssh_host_rsa_key
+  4 -rw-r--r--   1 root root    403 Jan 10 21:59 ssh_host_rsa_key.pub
+  4 -rw-r--r--   1 root root    338 Oct  2 17:10 ssh_import_id
+  4 -rw-r--r--   1 root root   3263 Jan 10 22:16 sshd_config
+

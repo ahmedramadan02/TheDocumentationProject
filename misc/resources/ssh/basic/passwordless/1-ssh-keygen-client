@@ -1,0 +1,29 @@
+aramadan@CAI1-L11666 MSYS ~
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/aramadan/.ssh/id_rsa): aws-ubuntu
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in aws-ubuntu.
+Your public key has been saved in aws-ubuntu.pub.
+The key fingerprint is:
+SHA256:TiBNm2edovcpRqclZ2MXFBVaiGBnoGZobBjCpwFurRQ aramadan@CAI1-L11666
+The key's randomart image is:
++---[RSA 3072]----+
+|=E.   . +oo.o++. |
+|.+o= + = +.o.o   |
+| +=.* O + o o    |
+|o..o + = .   .   |
+| .    . S B .    |
+|       = X +     |
+|        = o      |
+|       . .       |
+|                 |
++----[SHA256]-----+
+
+aramadan@CAI1-L11666 MSYS ~
+$ ls -altr | grep aws
+-rw-r--r-- 1 aramadan VNET+Group(513) 2610 Feb 29 16:24 aws-ubuntu
+-rw-r--r-- 1 aramadan VNET+Group(513)  574 Feb 29 16:24 aws-ubuntu.pub
+
+

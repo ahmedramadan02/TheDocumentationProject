@@ -1,0 +1,1 @@
+.long sys_newcall 338 //the function call with offset 338

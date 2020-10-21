@@ -1,0 +1,3 @@
+$ apt-get install gcc-arm-linux-gnueabi
+$ export CROSS_COMPILE=arm-linux-gnueabi-
+$ export ARCH=arm

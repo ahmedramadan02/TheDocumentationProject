@@ -1,0 +1,5 @@
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ bitbake rpi-basic-image
+
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ ls tmp/deploy/images/raspberrypi/*sdimg
+tmp/deploy/images/raspberrypi/rpi-basic-image-raspberrypi-20200326205401.rootfs.rpi-sdimg
+tmp/deploy/images/raspberrypi/rpi-basic-image-raspberrypi.rpi-sdimg

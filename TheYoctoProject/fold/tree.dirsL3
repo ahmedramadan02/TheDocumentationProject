@@ -1,0 +1,1206 @@
+poky
+├── bitbake
+│   ├── bin
+│   ├── contrib
+│   │   └── vim
+│   ├── doc
+│   │   ├── bitbake-user-manual
+│   │   ├── template
+│   │   └── tools
+│   └── lib
+│       ├── bb
+│       ├── bblayers
+│       ├── bs4
+│       ├── ply
+│       ├── progressbar
+│       ├── prserv
+│       ├── __pycache__
+│       └── toaster
+├── build
+│   ├── cache
+│   ├── conf
+│   ├── downloads
+│   │   ├── git2
+│   │   └── uninative
+│   ├── sstate-cache
+│   │   ├── 00
+│   │   ├── 01
+│   │   ├── 02
+│   │   ├── 03
+│   │   ├── 04
+│   │   ├── 05
+│   │   ├── 06
+│   │   ├── 07
+│   │   ├── 08
+│   │   ├── 09
+│   │   ├── 0a
+│   │   ├── 0b
+│   │   ├── 0c
+│   │   ├── 0d
+│   │   ├── 0e
+│   │   ├── 0f
+│   │   ├── 10
+│   │   ├── 11
+│   │   ├── 12
+│   │   ├── 13
+│   │   ├── 14
+│   │   ├── 15
+│   │   ├── 16
+│   │   ├── 17
+│   │   ├── 18
+│   │   ├── 19
+│   │   ├── 1a
+│   │   ├── 1b
+│   │   ├── 1c
+│   │   ├── 1d
+│   │   ├── 1e
+│   │   ├── 1f
+│   │   ├── 20
+│   │   ├── 21
+│   │   ├── 22
+│   │   ├── 23
+│   │   ├── 24
+│   │   ├── 25
+│   │   ├── 26
+│   │   ├── 27
+│   │   ├── 28
+│   │   ├── 29
+│   │   ├── 2a
+│   │   ├── 2b
+│   │   ├── 2c
+│   │   ├── 2d
+│   │   ├── 2e
+│   │   ├── 2f
+│   │   ├── 30
+│   │   ├── 31
+│   │   ├── 32
+│   │   ├── 33
+│   │   ├── 34
+│   │   ├── 35
+│   │   ├── 36
+│   │   ├── 37
+│   │   ├── 38
+│   │   ├── 39
+│   │   ├── 3a
+│   │   ├── 3b
+│   │   ├── 3c
+│   │   ├── 3d
+│   │   ├── 3e
+│   │   ├── 3f
+│   │   ├── 40
+│   │   ├── 41
+│   │   ├── 42
+│   │   ├── 43
+│   │   ├── 44
+│   │   ├── 45
+│   │   ├── 46
+│   │   ├── 47
+│   │   ├── 48
+│   │   ├── 49
+│   │   ├── 4a
+│   │   ├── 4b
+│   │   ├── 4c
+│   │   ├── 4d
+│   │   ├── 4e
+│   │   ├── 4f
+│   │   ├── 50
+│   │   ├── 51
+│   │   ├── 52
+│   │   ├── 53
+│   │   ├── 54
+│   │   ├── 55
+│   │   ├── 56
+│   │   ├── 57
+│   │   ├── 58
+│   │   ├── 59
+│   │   ├── 5a
+│   │   ├── 5b
+│   │   ├── 5c
+│   │   ├── 5d
+│   │   ├── 5e
+│   │   ├── 5f
+│   │   ├── 60
+│   │   ├── 61
+│   │   ├── 62
+│   │   ├── 63
+│   │   ├── 64
+│   │   ├── 65
+│   │   ├── 66
+│   │   ├── 67
+│   │   ├── 68
+│   │   ├── 69
+│   │   ├── 6a
+│   │   ├── 6b
+│   │   ├── 6c
+│   │   ├── 6d
+│   │   ├── 6e
+│   │   ├── 6f
+│   │   ├── 70
+│   │   ├── 71
+│   │   ├── 72
+│   │   ├── 73
+│   │   ├── 74
+│   │   ├── 75
+│   │   ├── 76
+│   │   ├── 77
+│   │   ├── 78
+│   │   ├── 79
+│   │   ├── 7a
+│   │   ├── 7b
+│   │   ├── 7c
+│   │   ├── 7d
+│   │   ├── 7e
+│   │   ├── 7f
+│   │   ├── 80
+│   │   ├── 81
+│   │   ├── 82
+│   │   ├── 83
+│   │   ├── 84
+│   │   ├── 85
+│   │   ├── 86
+│   │   ├── 87
+│   │   ├── 88
+│   │   ├── 89
+│   │   ├── 8a
+│   │   ├── 8b
+│   │   ├── 8c
+│   │   ├── 8d
+│   │   ├── 8e
+│   │   ├── 8f
+│   │   ├── 90
+│   │   ├── 91
+│   │   ├── 92
+│   │   ├── 93
+│   │   ├── 94
+│   │   ├── 95
+│   │   ├── 96
+│   │   ├── 97
+│   │   ├── 98
+│   │   ├── 99
+│   │   ├── 9a
+│   │   ├── 9b
+│   │   ├── 9c
+│   │   ├── 9d
+│   │   ├── 9e
+│   │   ├── 9f
+│   │   ├── a0
+│   │   ├── a1
+│   │   ├── a2
+│   │   ├── a3
+│   │   ├── a4
+│   │   ├── a5
+│   │   ├── a6
+│   │   ├── a7
+│   │   ├── a8
+│   │   ├── a9
+│   │   ├── aa
+│   │   ├── ab
+│   │   ├── ac
+│   │   ├── ad
+│   │   ├── ae
+│   │   ├── af
+│   │   ├── b0
+│   │   ├── b1
+│   │   ├── b2
+│   │   ├── b3
+│   │   ├── b4
+│   │   ├── b5
+│   │   ├── b6
+│   │   ├── b7
+│   │   ├── b8
+│   │   ├── b9
+│   │   ├── ba
+│   │   ├── bb
+│   │   ├── bc
+│   │   ├── bd
+│   │   ├── be
+│   │   ├── bf
+│   │   ├── c0
+│   │   ├── c1
+│   │   ├── c2
+│   │   ├── c3
+│   │   ├── c4
+│   │   ├── c5
+│   │   ├── c6
+│   │   ├── c7
+│   │   ├── c8
+│   │   ├── c9
+│   │   ├── ca
+│   │   ├── cb
+│   │   ├── cc
+│   │   ├── cd
+│   │   ├── ce
+│   │   ├── cf
+│   │   ├── d0
+│   │   ├── d1
+│   │   ├── d2
+│   │   ├── d3
+│   │   ├── d4
+│   │   ├── d5
+│   │   ├── d6
+│   │   ├── d7
+│   │   ├── d8
+│   │   ├── d9
+│   │   ├── da
+│   │   ├── db
+│   │   ├── dc
+│   │   ├── dd
+│   │   ├── de
+│   │   ├── df
+│   │   ├── e0
+│   │   ├── e1
+│   │   ├── e2
+│   │   ├── e3
+│   │   ├── e4
+│   │   ├── e5
+│   │   ├── e6
+│   │   ├── e7
+│   │   ├── e8
+│   │   ├── e9
+│   │   ├── ea
+│   │   ├── eb
+│   │   ├── ec
+│   │   ├── ed
+│   │   ├── ee
+│   │   ├── ef
+│   │   ├── f0
+│   │   ├── f1
+│   │   ├── f2
+│   │   ├── f3
+│   │   ├── f4
+│   │   ├── f5
+│   │   ├── f6
+│   │   ├── f7
+│   │   ├── f8
+│   │   ├── f9
+│   │   ├── fa
+│   │   ├── fb
+│   │   ├── fc
+│   │   ├── fd
+│   │   ├── fe
+│   │   ├── ff
+│   │   └── universal
+│   ├── tmp
+│   │   ├── buildstats
+│   │   ├── cache
+│   │   ├── deploy
+│   │   ├── log
+│   │   ├── sstate-control
+│   │   ├── stamps
+│   │   ├── sysroots
+│   │   ├── sysroots-components
+│   │   ├── sysroots-uninative
+│   │   └── work
+│   └── workspace
+│       ├── appends
+│       ├── conf
+│       ├── recipes
+│       └── sources
+├── documentation
+│   ├── adt-manual
+│   │   └── figures
+│   ├── bsp-guide
+│   │   └── figures
+│   ├── dev-manual
+│   │   └── figures
+│   ├── kernel-dev
+│   │   └── figures
+│   ├── mega-manual
+│   │   └── figures
+│   ├── profile-manual
+│   │   └── figures
+│   ├── ref-manual
+│   │   ├── examples
+│   │   └── figures
+│   ├── sdk-manual
+│   │   └── figures
+│   ├── template
+│   ├── toaster-manual
+│   │   └── figures
+│   ├── tools
+│   └── yocto-project-qs
+│       └── figures
+├── meta
+│   ├── classes
+│   ├── conf
+│   │   ├── distro
+│   │   ├── machine
+│   │   └── machine-sdk
+│   ├── files
+│   │   └── common-licenses
+│   ├── lib
+│   │   ├── oe
+│   │   └── oeqa
+│   ├── recipes-bsp
+│   │   ├── acpid
+│   │   ├── alsa-state
+│   │   ├── apmd
+│   │   ├── eee-acpi-scripts
+│   │   ├── formfactor
+│   │   ├── gnu-efi
+│   │   ├── grub
+│   │   ├── gummiboot
+│   │   ├── hostap
+│   │   ├── keymaps
+│   │   ├── libacpi
+│   │   ├── lrzsz
+│   │   ├── pciutils
+│   │   ├── pcmciautils
+│   │   ├── pm-utils
+│   │   ├── setserial
+│   │   ├── systemd-boot
+│   │   ├── u-boot
+│   │   ├── usbinit
+│   │   ├── usbutils
+│   │   └── v86d
+│   ├── recipes-connectivity
+│   │   ├── avahi
+│   │   ├── bind
+│   │   ├── bluez5
+│   │   ├── connman
+│   │   ├── dhcp
+│   │   ├── iproute2
+│   │   ├── irda-utils
+│   │   ├── iw
+│   │   ├── libnss-mdns
+│   │   ├── libpcap
+│   │   ├── mobile-broadband-provider-info
+│   │   ├── neard
+│   │   ├── nfs-utils
+│   │   ├── ofono
+│   │   ├── openssh
+│   │   ├── openssl
+│   │   ├── portmap
+│   │   ├── ppp
+│   │   ├── ppp-dialin
+│   │   ├── resolvconf
+│   │   ├── socat
+│   │   ├── wireless-tools
+│   │   └── wpa-supplicant
+│   ├── recipes-core
+│   │   ├── base-files
+│   │   ├── base-passwd
+│   │   ├── bsd-headers
+│   │   ├── busybox
+│   │   ├── console-tools
+│   │   ├── coreutils
+│   │   ├── dbus
+│   │   ├── dbus-wait
+│   │   ├── dropbear
+│   │   ├── expat
+│   │   ├── fts
+│   │   ├── gettext
+│   │   ├── glib-2.0
+│   │   ├── glibc
+│   │   ├── glib-networking
+│   │   ├── ifupdown
+│   │   ├── images
+│   │   ├── init-ifupdown
+│   │   ├── initrdscripts
+│   │   ├── initscripts
+│   │   ├── kbd
+│   │   ├── libcgroup
+│   │   ├── libxml
+│   │   ├── meta
+│   │   ├── musl
+│   │   ├── ncurses
+│   │   ├── netbase
+│   │   ├── os-release
+│   │   ├── packagegroups
+│   │   ├── psplash
+│   │   ├── readline
+│   │   ├── sysfsutils
+│   │   ├── systemd
+│   │   ├── sysvinit
+│   │   ├── udev
+│   │   ├── update-rc.d
+│   │   ├── util-linux
+│   │   ├── volatile-binds
+│   │   └── zlib
+│   ├── recipes-devtools
+│   │   ├── apt
+│   │   ├── autoconf
+│   │   ├── autogen
+│   │   ├── automake
+│   │   ├── binutils
+│   │   ├── bison
+│   │   ├── bootchart2
+│   │   ├── btrfs-tools
+│   │   ├── build-compare
+│   │   ├── ccache
+│   │   ├── cdrtools
+│   │   ├── chrpath
+│   │   ├── cmake
+│   │   ├── cve-check-tool
+│   │   ├── desktop-file-utils
+│   │   ├── devel-config
+│   │   ├── diffstat
+│   │   ├── distcc
+│   │   ├── dmidecode
+│   │   ├── docbook-dsssl-stylesheets
+│   │   ├── docbook-sgml-dtd
+│   │   ├── docbook-utils
+│   │   ├── docbook-xml
+│   │   ├── dosfstools
+│   │   ├── dpkg
+│   │   ├── e2fsprogs
+│   │   ├── elfutils
+│   │   ├── expect
+│   │   ├── fdisk
+│   │   ├── file
+│   │   ├── flex
+│   │   ├── gcc
+│   │   ├── gdb
+│   │   ├── git
+│   │   ├── gnu-config
+│   │   ├── guile
+│   │   ├── guilt
+│   │   ├── help2man
+│   │   ├── i2c-tools
+│   │   ├── icecc-create-env
+│   │   ├── icon-naming-utils
+│   │   ├── intltool
+│   │   ├── json-c
+│   │   ├── kconfig-frontends
+│   │   ├── libtool
+│   │   ├── linuxdoc-tools
+│   │   ├── m4
+│   │   ├── make
+│   │   ├── makedevs
+│   │   ├── mkelfimage
+│   │   ├── mklibs
+│   │   ├── mmc
+│   │   ├── mtd
+│   │   ├── mtools
+│   │   ├── nasm
+│   │   ├── openjade
+│   │   ├── opensp
+│   │   ├── opkg
+│   │   ├── opkg-utils
+│   │   ├── orc
+│   │   ├── ossp-uuid
+│   │   ├── packagegroups
+│   │   ├── patch
+│   │   ├── patchelf
+│   │   ├── pax-utils
+│   │   ├── perl
+│   │   ├── pkgconfig
+│   │   ├── postinst-intercept
+│   │   ├── prelink
+│   │   ├── pseudo
+│   │   ├── python
+│   │   ├── python-numpy
+│   │   ├── qemu
+│   │   ├── quilt
+│   │   ├── remake
+│   │   ├── rpm
+│   │   ├── rsync
+│   │   ├── ruby
+│   │   ├── run-postinsts
+│   │   ├── sgml-common
+│   │   ├── sgmlspl
+│   │   ├── squashfs-tools
+│   │   ├── strace
+│   │   ├── subversion
+│   │   ├── swig
+│   │   ├── syslinux
+│   │   ├── systemd-bootchart
+│   │   ├── tcf-agent
+│   │   ├── tcltk
+│   │   ├── unfs3
+│   │   ├── unifdef
+│   │   ├── vala
+│   │   ├── valgrind
+│   │   ├── xmlto
+│   │   ├── yasm
+│   │   └── zisofs-tools
+│   ├── recipes-extended
+│   │   ├── asciidoc
+│   │   ├── at
+│   │   ├── bash
+│   │   ├── bc
+│   │   ├── blktool
+│   │   ├── byacc
+│   │   ├── bzip2
+│   │   ├── chkconfig
+│   │   ├── cpio
+│   │   ├── cracklib
+│   │   ├── cronie
+│   │   ├── cups
+│   │   ├── cwautomacros
+│   │   ├── diffutils
+│   │   ├── ed
+│   │   ├── ethtool
+│   │   ├── findutils
+│   │   ├── foomatic
+│   │   ├── gawk
+│   │   ├── ghostscript
+│   │   ├── gperf
+│   │   ├── grep
+│   │   ├── groff
+│   │   ├── gzip
+│   │   ├── hdparm
+│   │   ├── images
+│   │   ├── iptables
+│   │   ├── iputils
+│   │   ├── less
+│   │   ├── libaio
+│   │   ├── libarchive
+│   │   ├── libidn
+│   │   ├── libsolv
+│   │   ├── libtirpc
+│   │   ├── libuser
+│   │   ├── lighttpd
+│   │   ├── logrotate
+│   │   ├── lsb
+│   │   ├── lsof
+│   │   ├── ltp
+│   │   ├── mailx
+│   │   ├── man
+│   │   ├── man-pages
+│   │   ├── mc
+│   │   ├── mdadm
+│   │   ├── mingetty
+│   │   ├── minicom
+│   │   ├── mktemp
+│   │   ├── msmtp
+│   │   ├── net-tools
+│   │   ├── newt
+│   │   ├── packagegroups
+│   │   ├── pam
+│   │   ├── parted
+│   │   ├── pax
+│   │   ├── pbzip2
+│   │   ├── perl
+│   │   ├── pigz
+│   │   ├── pixz
+│   │   ├── procps
+│   │   ├── psmisc
+│   │   ├── quota
+│   │   ├── rpcbind
+│   │   ├── screen
+│   │   ├── sed
+│   │   ├── shadow
+│   │   ├── slang
+│   │   ├── stat
+│   │   ├── stress
+│   │   ├── sudo
+│   │   ├── sysklogd
+│   │   ├── sysstat
+│   │   ├── tar
+│   │   ├── tcp-wrappers
+│   │   ├── texi2html
+│   │   ├── texinfo
+│   │   ├── texinfo-dummy-native
+│   │   ├── time
+│   │   ├── tzcode
+│   │   ├── tzdata
+│   │   ├── unzip
+│   │   ├── watchdog
+│   │   ├── wget
+│   │   ├── which
+│   │   ├── xdg-utils
+│   │   ├── xinetd
+│   │   ├── xz
+│   │   └── zip
+│   ├── recipes-gnome
+│   │   ├── epiphany
+│   │   ├── gcr
+│   │   ├── gdk-pixbuf
+│   │   ├── gnome
+│   │   ├── gnome-desktop
+│   │   ├── gobject-introspection
+│   │   ├── gsettings-desktop-schemas
+│   │   ├── gtk+
+│   │   ├── gtk-doc
+│   │   ├── hicolor-icon-theme
+│   │   ├── json-glib
+│   │   ├── libgudev
+│   │   ├── libnotify
+│   │   ├── librsvg
+│   │   ├── libsecret
+│   │   └── libwnck
+│   ├── recipes-graphics
+│   │   ├── builder
+│   │   ├── cairo
+│   │   ├── cantarell-fonts
+│   │   ├── clutter
+│   │   ├── cogl
+│   │   ├── drm
+│   │   ├── eglinfo
+│   │   ├── fontconfig
+│   │   ├── freetype
+│   │   ├── fstests
+│   │   ├── glew
+│   │   ├── harfbuzz
+│   │   ├── images
+│   │   ├── jpeg
+│   │   ├── libepoxy
+│   │   ├── libfakekey
+│   │   ├── libmatchbox
+│   │   ├── libsdl
+│   │   ├── libsdl2
+│   │   ├── matchbox-session
+│   │   ├── matchbox-wm
+│   │   ├── menu-cache
+│   │   ├── mesa
+│   │   ├── mini-x-session
+│   │   ├── mx
+│   │   ├── packagegroups
+│   │   ├── pango
+│   │   ├── piglit
+│   │   ├── pong-clock
+│   │   ├── startup-notification
+│   │   ├── ttf-fonts
+│   │   ├── waffle
+│   │   ├── wayland
+│   │   ├── x11-common
+│   │   ├── xcursor-transparent-theme
+│   │   ├── xinput-calibrator
+│   │   ├── xorg-app
+│   │   ├── xorg-driver
+│   │   ├── xorg-font
+│   │   ├── xorg-lib
+│   │   ├── xorg-proto
+│   │   ├── xorg-util
+│   │   ├── xorg-xserver
+│   │   ├── xrestop
+│   │   └── xvideo-tests
+│   ├── recipes-kernel
+│   │   ├── blktrace
+│   │   ├── cryptodev
+│   │   ├── dtc
+│   │   ├── kern-tools
+│   │   ├── kexec
+│   │   ├── kmod
+│   │   ├── latencytop
+│   │   ├── libpfm
+│   │   ├── linux
+│   │   ├── linux-firmware
+│   │   ├── linux-libc-headers
+│   │   ├── lttng
+│   │   ├── modutils-initscripts
+│   │   ├── oprofile
+│   │   ├── perf
+│   │   ├── powertop
+│   │   ├── sysprof
+│   │   ├── systemtap
+│   │   └── trace-cmd
+│   ├── recipes-lsb4
+│   │   ├── libpng
+│   │   └── perl
+│   ├── recipes-multimedia
+│   │   ├── alsa
+│   │   ├── ffmpeg
+│   │   ├── flac
+│   │   ├── gstreamer
+│   │   ├── lame
+│   │   ├── liba52
+│   │   ├── libid3tag
+│   │   ├── libogg
+│   │   ├── libomxil
+│   │   ├── libpng
+│   │   ├── libsamplerate
+│   │   ├── libsndfile
+│   │   ├── libtheora
+│   │   ├── libtiff
+│   │   ├── libvorbis
+│   │   ├── mpeg2dec
+│   │   ├── mpg123
+│   │   ├── pulseaudio
+│   │   ├── sbc
+│   │   ├── speex
+│   │   ├── tremor
+│   │   ├── webp
+│   │   └── x264
+│   ├── recipes-rt
+│   │   ├── images
+│   │   └── rt-tests
+│   ├── recipes-sato
+│   │   ├── images
+│   │   ├── l3afpad
+│   │   ├── matchbox-config-gtk
+│   │   ├── matchbox-desktop
+│   │   ├── matchbox-keyboard
+│   │   ├── matchbox-panel-2
+│   │   ├── matchbox-sato
+│   │   ├── matchbox-terminal
+│   │   ├── matchbox-theme-sato
+│   │   ├── packagegroups
+│   │   ├── pcmanfm
+│   │   ├── pulseaudio-sato
+│   │   ├── puzzles
+│   │   ├── rxvt-unicode
+│   │   ├── sato-screenshot
+│   │   ├── settings-daemon
+│   │   ├── shutdown-desktop
+│   │   └── webkit
+│   ├── recipes-support
+│   │   ├── apr
+│   │   ├── argp-standalone
+│   │   ├── aspell
+│   │   ├── atk
+│   │   ├── attr
+│   │   ├── bash-completion
+│   │   ├── bdwgc
+│   │   ├── beecrypt
+│   │   ├── bmap-tools
+│   │   ├── boost
+│   │   ├── ca-certificates
+│   │   ├── consolekit
+│   │   ├── createrepo
+│   │   ├── curl
+│   │   ├── db
+│   │   ├── debianutils
+│   │   ├── enchant
+│   │   ├── gdbm
+│   │   ├── gmp
+│   │   ├── gnome-desktop-testing
+│   │   ├── gnupg
+│   │   ├── gnutls
+│   │   ├── gpgme
+│   │   ├── icu
+│   │   ├── iso-codes
+│   │   ├── libassuan
+│   │   ├── libatomic-ops
+│   │   ├── libbsd
+│   │   ├── libcap
+│   │   ├── libcap-ng
+│   │   ├── libcheck
+│   │   ├── libcroco
+│   │   ├── libdaemon
+│   │   ├── libevdev
+│   │   ├── libevent
+│   │   ├── libexif
+│   │   ├── libffi
+│   │   ├── libfm
+│   │   ├── libgcrypt
+│   │   ├── libgpg-error
+│   │   ├── libical
+│   │   ├── libiconv
+│   │   ├── libksba
+│   │   ├── libmpc
+│   │   ├── libnl
+│   │   ├── libpcre
+│   │   ├── libproxy
+│   │   ├── libsoup
+│   │   ├── libunistring
+│   │   ├── libunwind
+│   │   ├── liburcu
+│   │   ├── libusb
+│   │   ├── libxslt
+│   │   ├── libyaml
+│   │   ├── lz4
+│   │   ├── lzo
+│   │   ├── lzop
+│   │   ├── mpfr
+│   │   ├── neon
+│   │   ├── nettle
+│   │   ├── npth
+│   │   ├── nspr
+│   │   ├── nss
+│   │   ├── nss-myhostname
+│   │   ├── p11-kit
+│   │   ├── pinentry
+│   │   ├── popt
+│   │   ├── ptest-runner
+│   │   ├── rng-tools
+│   │   ├── serf
+│   │   ├── shared-mime-info
+│   │   ├── source-highlight
+│   │   ├── sqlite
+│   │   ├── taglib
+│   │   ├── user-creation
+│   │   └── vte
+│   └── site
+├── meta-mylayer
+│   ├── conf
+│   └── recipes-example
+│       ├── example
+│       └── images
+├── meta-poky
+│   ├── classes
+│   ├── conf
+│   │   └── distro
+│   └── recipes-core
+│       ├── busybox
+│       ├── psplash
+│       └── tiny-init
+├── meta-raspberrypi
+│   ├── classes
+│   ├── conf
+│   │   └── machine
+│   ├── files
+│   │   └── custom-licenses
+│   ├── recipes-bsp
+│   │   ├── bootfiles
+│   │   ├── common
+│   │   ├── formfactor
+│   │   ├── rpi-u-boot-scr
+│   │   └── u-boot
+│   ├── recipes-connectivity
+│   │   └── bluez5
+│   ├── recipes-core
+│   │   ├── images
+│   │   ├── packagegroups
+│   │   ├── psplash
+│   │   └── udev
+│   ├── recipes-devtools
+│   │   ├── bcm2835
+│   │   ├── pi-blaster
+│   │   ├── python
+│   │   └── wiringPi
+│   ├── recipes-graphics
+│   │   ├── eglinfo
+│   │   ├── mesa
+│   │   ├── userland
+│   │   ├── vc-graphics
+│   │   ├── wayland
+│   │   └── xorg-xserver
+│   ├── recipes-kernel
+│   │   ├── linux
+│   │   └── linux-firmware
+│   ├── recipes-multimedia
+│   │   ├── gstreamer
+│   │   └── omxplayer
+│   └── scripts
+│       └── lib
+├── meta-selftest
+│   ├── classes
+│   ├── conf
+│   │   └── machine
+│   ├── files
+│   │   └── signing
+│   ├── lib
+│   │   ├── devtool
+│   │   └── oeqa
+│   └── recipes-test
+│       ├── aspell
+│       ├── devtool
+│       ├── emptytest
+│       ├── error
+│       ├── images
+│       ├── m4
+│       ├── man
+│       ├── recipetool
+│       └── xcursor-transparent-theme
+├── meta-skeleton
+│   ├── conf
+│   ├── recipes-core
+│   │   └── busybox
+│   ├── recipes-kernel
+│   │   ├── hello-mod
+│   │   └── linux
+│   ├── recipes-multilib
+│   │   └── images
+│   └── recipes-skeleton
+│       ├── service
+│       └── useradd
+├── meta-yocto
+│   └── conf
+├── meta-yocto-bsp
+│   ├── conf
+│   │   └── machine
+│   ├── lib
+│   │   └── oeqa
+│   ├── recipes-bsp
+│   │   ├── formfactor
+│   │   └── gma500-gfx-check
+│   ├── recipes-core
+│   │   └── packagegroups
+│   ├── recipes-graphics
+│   │   └── xorg-xserver
+│   └── recipes-kernel
+│       └── linux
+├── rpi-build
+│   ├── cache
+│   ├── conf
+│   ├── downloads
+│   │   ├── git2
+│   │   └── uninative
+│   ├── sstate-cache
+│   │   ├── 01
+│   │   ├── 02
+│   │   ├── 03
+│   │   ├── 04
+│   │   ├── 05
+│   │   ├── 06
+│   │   ├── 07
+│   │   ├── 08
+│   │   ├── 09
+│   │   ├── 0a
+│   │   ├── 0b
+│   │   ├── 0c
+│   │   ├── 0d
+│   │   ├── 0e
+│   │   ├── 0f
+│   │   ├── 10
+│   │   ├── 11
+│   │   ├── 12
+│   │   ├── 13
+│   │   ├── 14
+│   │   ├── 15
+│   │   ├── 16
+│   │   ├── 17
+│   │   ├── 18
+│   │   ├── 19
+│   │   ├── 1a
+│   │   ├── 1b
+│   │   ├── 1c
+│   │   ├── 1d
+│   │   ├── 1e
+│   │   ├── 1f
+│   │   ├── 20
+│   │   ├── 21
+│   │   ├── 22
+│   │   ├── 23
+│   │   ├── 24
+│   │   ├── 25
+│   │   ├── 26
+│   │   ├── 27
+│   │   ├── 28
+│   │   ├── 29
+│   │   ├── 2a
+│   │   ├── 2b
+│   │   ├── 2c
+│   │   ├── 2d
+│   │   ├── 2e
+│   │   ├── 2f
+│   │   ├── 30
+│   │   ├── 31
+│   │   ├── 32
+│   │   ├── 33
+│   │   ├── 34
+│   │   ├── 35
+│   │   ├── 36
+│   │   ├── 37
+│   │   ├── 38
+│   │   ├── 39
+│   │   ├── 3a
+│   │   ├── 3b
+│   │   ├── 3c
+│   │   ├── 3d
+│   │   ├── 3e
+│   │   ├── 3f
+│   │   ├── 40
+│   │   ├── 41
+│   │   ├── 42
+│   │   ├── 43
+│   │   ├── 44
+│   │   ├── 45
+│   │   ├── 46
+│   │   ├── 47
+│   │   ├── 48
+│   │   ├── 49
+│   │   ├── 4a
+│   │   ├── 4b
+│   │   ├── 4c
+│   │   ├── 4d
+│   │   ├── 4e
+│   │   ├── 4f
+│   │   ├── 50
+│   │   ├── 51
+│   │   ├── 52
+│   │   ├── 53
+│   │   ├── 54
+│   │   ├── 55
+│   │   ├── 56
+│   │   ├── 57
+│   │   ├── 58
+│   │   ├── 59
+│   │   ├── 5a
+│   │   ├── 5b
+│   │   ├── 5c
+│   │   ├── 5d
+│   │   ├── 5e
+│   │   ├── 5f
+│   │   ├── 60
+│   │   ├── 61
+│   │   ├── 62
+│   │   ├── 63
+│   │   ├── 64
+│   │   ├── 65
+│   │   ├── 66
+│   │   ├── 67
+│   │   ├── 68
+│   │   ├── 69
+│   │   ├── 6a
+│   │   ├── 6b
+│   │   ├── 6c
+│   │   ├── 6d
+│   │   ├── 6e
+│   │   ├── 6f
+│   │   ├── 70
+│   │   ├── 71
+│   │   ├── 72
+│   │   ├── 73
+│   │   ├── 74
+│   │   ├── 75
+│   │   ├── 76
+│   │   ├── 77
+│   │   ├── 78
+│   │   ├── 79
+│   │   ├── 7a
+│   │   ├── 7b
+│   │   ├── 7c
+│   │   ├── 7d
+│   │   ├── 7e
+│   │   ├── 7f
+│   │   ├── 80
+│   │   ├── 81
+│   │   ├── 82
+│   │   ├── 83
+│   │   ├── 84
+│   │   ├── 85
+│   │   ├── 86
+│   │   ├── 87
+│   │   ├── 88
+│   │   ├── 89
+│   │   ├── 8a
+│   │   ├── 8b
+│   │   ├── 8c
+│   │   ├── 8d
+│   │   ├── 8e
+│   │   ├── 8f
+│   │   ├── 90
+│   │   ├── 91
+│   │   ├── 92
+│   │   ├── 93
+│   │   ├── 94
+│   │   ├── 95
+│   │   ├── 96
+│   │   ├── 97
+│   │   ├── 98
+│   │   ├── 99
+│   │   ├── 9a
+│   │   ├── 9b
+│   │   ├── 9c
+│   │   ├── 9d
+│   │   ├── 9e
+│   │   ├── 9f
+│   │   ├── a0
+│   │   ├── a1
+│   │   ├── a2
+│   │   ├── a3
+│   │   ├── a4
+│   │   ├── a5
+│   │   ├── a6
+│   │   ├── a7
+│   │   ├── a8
+│   │   ├── a9
+│   │   ├── aa
+│   │   ├── ab
+│   │   ├── ac
+│   │   ├── ad
+│   │   ├── ae
+│   │   ├── af
+│   │   ├── b0
+│   │   ├── b1
+│   │   ├── b2
+│   │   ├── b3
+│   │   ├── b4
+│   │   ├── b5
+│   │   ├── b6
+│   │   ├── b7
+│   │   ├── b8
+│   │   ├── b9
+│   │   ├── ba
+│   │   ├── bb
+│   │   ├── bc
+│   │   ├── bd
+│   │   ├── be
+│   │   ├── bf
+│   │   ├── c0
+│   │   ├── c1
+│   │   ├── c2
+│   │   ├── c3
+│   │   ├── c4
+│   │   ├── c5
+│   │   ├── c6
+│   │   ├── c7
+│   │   ├── c8
+│   │   ├── c9
+│   │   ├── ca
+│   │   ├── cb
+│   │   ├── cc
+│   │   ├── cd
+│   │   ├── ce
+│   │   ├── cf
+│   │   ├── d0
+│   │   ├── d1
+│   │   ├── d2
+│   │   ├── d3
+│   │   ├── d4
+│   │   ├── d5
+│   │   ├── d6
+│   │   ├── d7
+│   │   ├── d8
+│   │   ├── d9
+│   │   ├── da
+│   │   ├── db
+│   │   ├── dc
+│   │   ├── dd
+│   │   ├── de
+│   │   ├── df
+│   │   ├── e0
+│   │   ├── e1
+│   │   ├── e2
+│   │   ├── e3
+│   │   ├── e4
+│   │   ├── e5
+│   │   ├── e6
+│   │   ├── e7
+│   │   ├── e8
+│   │   ├── e9
+│   │   ├── ea
+│   │   ├── eb
+│   │   ├── ec
+│   │   ├── ed
+│   │   ├── ee
+│   │   ├── ef
+│   │   ├── f0
+│   │   ├── f1
+│   │   ├── f2
+│   │   ├── f3
+│   │   ├── f4
+│   │   ├── f5
+│   │   ├── f6
+│   │   ├── f7
+│   │   ├── f8
+│   │   ├── f9
+│   │   ├── fa
+│   │   ├── fb
+│   │   ├── fc
+│   │   ├── fd
+│   │   ├── fe
+│   │   ├── ff
+│   │   └── universal
+│   └── tmp
+│       ├── buildstats
+│       ├── cache
+│       ├── deploy
+│       ├── log
+│       ├── sstate-control
+│       ├── stamps
+│       ├── sysroots
+│       ├── sysroots-components
+│       ├── sysroots-uninative
+│       ├── work
+│       └── work-shared
+└── scripts
+    ├── contrib
+    │   ├── bb-perf
+    │   └── python
+    ├── lib
+    │   ├── bsp
+    │   ├── devtool
+    │   ├── __pycache__
+    │   ├── recipetool
+    │   └── wic
+    ├── native-intercept
+    ├── postinst-intercepts
+    ├── pybootchartgui
+    │   └── pybootchartgui
+    └── tiny
+
+1203 directories

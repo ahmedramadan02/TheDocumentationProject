@@ -1,0 +1,8 @@
+#define __NR_newSysCall		    338
+
+and make sure to increase the (NR_syscalls = NR_syscalls + 1)
+
+//before
+#define NR_syscalls 338
+//after
+#define NR_syscalls 339

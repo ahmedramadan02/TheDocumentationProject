@@ -1,0 +1,21 @@
+# Includes here
+
+# varaibles here
+####### EXAMPLES ######
+# CC = mingw32-g++
+# LD = mingw32-ld
+# TARGET = result.out
+# LDFLAGS = 
+# CFLAGS  = 
+
+# Basic Targets
+####### EXAMPLES ###### 
+all:
+
+clean:
+
+debug:
+
+
+
+

@@ -1,0 +1,8 @@
+# change ownership to user: root, and group hacker
+aramadan@CAI1-L11666 MINGW64 ~
+$ chown root:hacker testfile
+
+# Only change the group
+aramadan@CAI1-L11666 MINGW64 ~
+$ chgrp hacker testfile
+

@@ -1,0 +1,4 @@
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ lsblk
+sdc      8:32   1   7.2G  0 disk 
+├─sdc1   8:33   1    40M  0 part /media/ahmed/raspberrypi
+└─sdc2   8:34   1    76M  0 part /media/ahmed/dc6e7cac-b6d9-4658-8c50-c64d188006

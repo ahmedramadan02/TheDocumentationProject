@@ -1,0 +1,5 @@
+ahmed@Sabry:~/TheYoctoProject/poky$ mkdir meta-mylayer
+ahmed@Sabry:~/TheYoctoProject/poky$ mkdir met-mylayer/conf
+ahmed@Sabry:~/TheYoctoProject/poky$ cd met-mylayer/conf/
+ahmed@Sabry:~/TheYoctoProject/poky/conf$ vim layer.conf
+ahmed@Sabry:~/TheYoctoProject/poky/meta-mylayer/recipes-example/images$ vim example-image.bb 

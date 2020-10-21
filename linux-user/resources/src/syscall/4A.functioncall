@@ -1,0 +1,28 @@
+main {
+    int a = 100; //non-executable
+    int b = 200;
+    int c;
+    int a+b; //executable
+}
+
+//Let's have a look at the assembly call
+//1. Symbols         
+symbole_name	type	composition	offset address
+a       		int	4		        -12 (%ebp) //relative to the stack
+b       		int	4		        -8 (%ebp)
+c       		int	4       		-4 (%ebp)
+                total 12
+//2. Assembly
+main:
+    pushl	%ebp		        //pre-amble
+    movl	%esp, %ebp	        //pre-amble
+         
+    subl	$12, %esp	        //the stack size = 12 as three variables
+    movl	$100, -12(%ebp)	    //initialize a by 100
+    movl	$100, -8(%ebp)
+    movl	-8(%ebp), %eax
+    addl	-12(%ebp), %eax
+    movl	%eax, -4(%ebp)
+             
+    leave	                    //post-amble
+    ret	                        //post-amble

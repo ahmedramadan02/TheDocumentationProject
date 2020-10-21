@@ -1,0 +1,16 @@
+ubuntu@ip-172-31-46-156:/lib/modules/4.15.0-1057-aws/kernel$ lsmod
+Module                  Size  Used by
+ufs                    77824  0
+msdos                  20480  0
+xfs                  1204224  0
+binfmt_misc            20480  1
+serio_raw              16384  0
+sch_fq_codel           20480  2
+ib_iser                49152  0
+rdma_cm                61440  1 ib_iser
+iw_cm                  45056  1 rdma_cm
+ib_cm                  53248  1 rdma_cm
+ib_core               225280  4 rdma_cm,iw_cm,ib_iser,ib_cm
+
+ubuntu@ip-172-31-46-156:/lib/modules/4.15.0-1057-aws/kernel$ lsmod | wc -l
+44 # how many modules loaded

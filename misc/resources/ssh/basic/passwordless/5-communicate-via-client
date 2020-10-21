@@ -1,0 +1,2 @@
+# communicate using the private key "aws-ubuntu"
+$ ssh -i aws-ubuntu ubuntu@ec2-3-14-88-240.us-east-2.compute.amazonaws.com 

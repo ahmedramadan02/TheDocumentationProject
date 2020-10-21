@@ -1,0 +1,33 @@
+ubuntu@ip-172-31-46-156:/proc$ ls
+1     1853  2078  24    4    82    buddyinfo    kcore         scsi
+10    1865  2083  2459  424  829   bus          key-users     self
+1000  1875  2091  25    428  83    cgroups      keys          slabinfo
+1012  1978  2097  2541  430  838   cmdline      kmsg          softirqs
+1015  1979  21    2557  434  84    consoles     kpagecgroup   stat
+1019  2     2113  26    435  845   cpuinfo      kpagecount    swaps
+1034  20    2114  27    436  85    crypto       kpageflags    sys
+1035  2001  2115  271   437  853   devices      loadavg       sysrq-trigger
+
+ubuntu@ip-172-31-46-156:/proc$ echo $$
+1979 # this is the id of the current terminal process
+ubuntu@ip-172-31-46-156:/proc$ cd 1979
+ubuntu@ip-172-31-46-156:/proc/1979$ ls
+attr             exe        mounts         projid_map    status
+autogroup        fd         mountstats     root          syscall
+auxv             fdinfo     net            sched         task
+cgroup           gid_map    ns             schedstat     timers
+clear_refs       io         numa_maps      sessionid     timerslack_ns
+cmdline          limits     oom_adj        setgroups     uid_map
+comm             loginuid   oom_score      smaps         wchan
+coredump_filter  map_files  oom_score_adj  smaps_rollup
+cpuset           maps       pagemap        stack
+cwd              mem        patch_state    stat
+environ          mountinfo  personality    statm
+
+ubuntu@ip-172-31-46-156:/proc/1979$ ls -l exe
+lrwxrwxrwx 1 ubuntu ubuntu 0 Jan 11 17:04 exe -> /bin/bash
+
+ubuntu@ip-172-31-46-156:/proc/1979$ ls task
+1979
+
+

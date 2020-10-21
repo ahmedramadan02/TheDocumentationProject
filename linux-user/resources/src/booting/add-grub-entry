@@ -1,0 +1,27 @@
+ubuntu@ip-172-31-46-156:~$ cd /etc/grub.d/
+ubuntu@ip-172-31-46-156:/etc/grub.d$ ls
+00_header        10_linux      30_os-prober      40_custom  README
+05_debian_theme  20_linux_xen  30_uefi-firmware  41_custom
+ubuntu@ip-172-31-46-156:/etc/grub.d$ cat 40_custom
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides an easy way to add custom menu entries.  Simply type the
+# menu entries you want to add after this comment.  Be careful not to change
+# the 'exec tail' line above.
+
+ubuntu@ip-172-31-46-156:/etc/grub.d$ echo "menuentry 'Custom Linux Boot Entry' 
+{ linux16 /vmlinuz-4.15.0-1051-aws root=/dev/mapper/centos-root ro rd.lvm.lv=centos/root 
+rd.lvm=centos/swap rhgb quiet LANG=en_US.UTF-8 initcall_debug initrd16 /initrd.img-4.15.0-1057-aws
+}" >> 40_custom
+
+
+ubuntu@ip-172-31-46-156:/boot$ sudo grub-mkconfig -o /etc/grub2.cfg
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50-cloudimg-settings.cfg'
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-4.15.0-1057-aws
+Found initrd image: /boot/initrd.img-4.15.0-1057-aws
+Found linux image: /boot/vmlinuz-4.15.0-1051-aws
+Found initrd image: /boot/initrd.img-4.15.0-1051-aws
+done
+

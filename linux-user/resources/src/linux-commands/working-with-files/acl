@@ -1,0 +1,5 @@
+# setfacl -m "u:user:permissions" <file/dir>
+
+# getfacl <file/dir>
+
+# not complete

@@ -1,0 +1,10 @@
+Note: All mahines with the BCM SoC number:
+
+raspberrypi (BCM2835)
+raspberrypi0 (BCM2835)
+raspberrypi0-wifi (BCM2835)
+raspberrypi2 (BCM2836 or BCM2837 v1.2+)
+raspberrypi3 (BCM2837)
+raspberrypi4 (BCM2838)
+raspberrypi-cm (BCM2835)
+raspberrypi-cm3 (BCM2837)

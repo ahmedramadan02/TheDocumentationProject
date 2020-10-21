@@ -1,0 +1,1 @@
+ssh -i /c/Users/aramadan/Downloads/AWS-Ubuntu/Ubuntu-KeyPair.pem ubuntu@ec2-3-14-88-240.us-east-2.compute.amazonaws.com

@@ -1,0 +1,14 @@
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ dmesg | tail
+[84842.451867] sd 6:0:0:0: [sdc] Write Protect is off
+[84842.451875] sd 6:0:0:0: [sdc] Mode Sense: 0b 00 00 08
+[84842.452979] sd 6:0:0:0: [sdc] No Caching mode page found
+[84842.452991] sd 6:0:0:0: [sdc] Assuming drive cache: write through
+[84842.458785]  sdc: sdc1 sdc2
+[84842.462429] sd 6:0:0:0: [sdc] Attached SCSI removable disk
+[84843.066728] EXT4-fs (sdc2): mounting ext3 file system using the ext4 subsystem
+[84843.974810] EXT4-fs (sdc2): recovery complete
+[84843.976497] EXT4-fs (sdc2): mounted filesystem with ordered data mode. Opts: (null)
+[84844.002352] FAT-fs (sdc1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+
+
+# You can try also lsblk, or fdisk -l commands

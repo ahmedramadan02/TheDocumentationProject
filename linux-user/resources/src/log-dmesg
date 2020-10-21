@@ -1,0 +1,10 @@
+ubuntu@ip-172-31-46-156:~$ dmesg
+[    0.000000] Linux version 4.15.0-1057-aws (buildd@lgw01-amd64-030) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #59-Ubuntu SMP Wed Dec 4 10:02:00 UTC 2019 (Ubuntu 4.15.0-1057.59-aws 4.15.18)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-1057-aws root=UUID=651cda91-e465-4685-b697-67aa07181279 ro console=tty1 console=ttyS0 nvme_core.io_timeout=4294967295
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'

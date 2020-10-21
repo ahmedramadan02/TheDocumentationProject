@@ -1,0 +1,10 @@
+ubuntu@ip-172-31-46-156:/sys$ ls
+block  class  devices   fs          kernel  power
+bus    dev    firmware  hypervisor  module
+
+ubuntu@ip-172-31-46-156:/sys$ ls -l /dev/null
+# c means character device file, and (1, 3) represents the minor and major numbers correspondingly.  
+crw-rw-rw- 1 root root 1, 3 Jan 11 14:02 /dev/null
+ubuntu@ip-172-31-46-156:/sys$ ^C
+ubuntu@ip-172-31-46-156:/sys$ ls -l /dev/zero
+crw-rw-rw- 1 root root 1, 5 Jan 11 14:02 /dev/zero

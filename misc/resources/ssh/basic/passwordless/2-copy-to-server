@@ -1,0 +1,3 @@
+$ scp /home/aramadan/aws-ubuntu.pub ubuntu@ec2-3-14-88-240.us-east-2.compute.amazonaws.com:~
+ubuntu@ec2-3-14-88-240.us-east-2.compute.amazonaws.com's password:
+aws-ubuntu.pub                                100%  574     2.7KB/s   00:00

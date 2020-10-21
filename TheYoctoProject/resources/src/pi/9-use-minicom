@@ -1,0 +1,13 @@
+ahmed@Sabry:~$ sudo apt-get install minicom
+
+ahmed@Sabry:~$ dmesg | tail
+[86312.323400] usb 3-1: Product: FT232R USB UART
+[86312.323403] usb 3-1: Manufacturer: FTDI
+[86312.323406] usb 3-1: SerialNumber: A700e9Wx
+[86312.351457] usbcore: registered new interface driver usbserial_generic
+[86312.351520] usbserial: USB Serial support registered for generic
+[86312.359599] usbcore: registered new interface driver ftdi_sio
+[86312.359618] usbserial: USB Serial support registered for FTDI USB Serial Device
+[86312.359753] ftdi_sio 3-1:1.0: FTDI USB Serial Device converter detected
+[86312.359865] usb 3-1: Detected FT232RL
+[86312.360556] usb 3-1: FTDI USB Serial Device converter now attached to ttyUSB0

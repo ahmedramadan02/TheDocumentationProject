@@ -1,0 +1,1 @@
+mkimage -f kernel_fdt_signed.its -k keys -K dts/dt.dtb -r image fitImage

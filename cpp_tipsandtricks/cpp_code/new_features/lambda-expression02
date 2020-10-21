@@ -1,0 +1,34 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+ 
+bool is_greater_than_5(int value)
+{
+    return (value > 5);
+}
+ 
+int main()
+{
+    vector<int> numbers { 1, 2, 3, 4, 5, 10, 15, 20, 25, 35, 45, 50 };
+    auto greater_than_5_count = count_if(numbers.begin(), numbers.end(), is_greater_than_5);
+ 
+    cout << "The number of elements greater than 5 is: "
+        << greater_than_5_count << "." << endl;
+}
+
+//Or you can use a similar version of the 
+// count_if() using the lambda expression as follow
+
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+ 
+int main()
+{
+    vector<int> numbers { 1, 2, 3, 4, 5, 10, 15, 20, 25, 35, 45, 50 };
+    auto great_than_5_count = count_if(numbers.begin(), numbers.end(), [](int x) { return (x > 5); });
+    cout << "The number of elements greater than 5 is: "
+         << greater_than_5_count << "." << endl;
+}

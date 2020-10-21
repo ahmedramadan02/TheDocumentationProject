@@ -1,0 +1,7 @@
+$ sudo apt-get install device-tree-compiler
+
+# or you can pick the latest source and install it your self
+$ git clone git://git.kernel.org/pub/scm/utils/dtc/dtc.git -b v1.4.1
+$ cd dtc/
+$ make
+$ export PATH=$HOME/dtc/:$PATH

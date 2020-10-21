@@ -1,0 +1,10 @@
+
+aramadan@CAI1-L11666 MINGW64 ~
+$ umask
+0022
+
+aramadan@CAI1-L11666 MINGW64 ~
+$ umask -S
+u=rwx,g=rx,o=rx
+
+##Not complete

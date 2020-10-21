@@ -1,0 +1,18 @@
+(gdb) info register rip
+rip            0x401574            0x401574 <main(int, char**)+20>
+(gdb) x/x 0x401574
+0x401574 <main(int, char**)+20>:        0x00fc45c7
+(gdb) x/o 0x401574
+0x401574 <main(int, char**)+20>:        077042707
+(gdb) x/t $rip
+0x401574 <main(int, char**)+20>:        00000000111111000100010111000111
+(gdb) x/16x $rip
+0x401574 <main(int, char**)+20>:        0x00fc45c7      0x83000000      0x7f09fc7d      0x0d8d4812
+0x401584 <main(int, char**)+36>:        0x00002a78      0x0015e3e8      0xfc458300      0xb8e8eb01
+0x401594 <main(int, char**)+52>:        0x00000000      0x30c48348      0x9090c35d      0x28ec8348
+0x4015a4 <__do_global_dtors+4>: 0x65058b48      0x4800001a      0x8548008b      0xff1d74c0
+(gdb) x/12x $rip
+0x401574 <main(int, char**)+20>:        0x00fc45c7      0x83000000      0x7f09fc7d      0x0d8d4812
+0x401584 <main(int, char**)+36>:        0x00002a78      0x0015e3e8      0xfc458300      0xb8e8eb01
+0x401594 <main(int, char**)+52>:        0x00000000      0x30c48348      0x9090c35d      0x28ec8348
+

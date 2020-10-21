@@ -1,0 +1,19 @@
+aramadan@CAI1-L11666 MSYS ~
+$ touch testfile
+
+aramadan@CAI1-L11666 MSYS ~
+$ cat <<EOF>> testfile
+> Hello
+> World!
+> EOF
+
+aramadan@CAI1-L11666 MSYS ~
+$ cat <<EOF>> testfile
+> again
+> EOF
+
+aramadan@CAI1-L11666 MSYS ~
+$ cat testfile
+Hello
+World!
+again

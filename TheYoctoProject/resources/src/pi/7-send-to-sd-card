@@ -1,0 +1,1 @@
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ sudo dd if=tmp/deploy/images/raspberrypi/rpi-basic-image-raspberrypi.rpi-sdimg of=/dev/sdc bs=1M

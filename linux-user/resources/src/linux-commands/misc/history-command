@@ -1,0 +1,16 @@
+aramadan@CAI1-L11666 MSYS ~
+$ history
+    1  cd /c/Users/aramadan/Desktop/clang_AST
+    2  clang++ -std=c++11 -stdlib=libc++ main.cpp -fno-rtti -IC:\msys64\mingw64\include -LC:\msys64\mingw64\lib -lclangTooling -lclangFrontendTool
+    3   -lclangFrontend -lclangDriver -lclangSerialization -lclangCodeGen -lclangParse -lclangSema -lclangStaticAnalyzerFrontend -lclangStaticAnalyz
+    4  erCheckers -lclangStaticAnalyzerCore -lclangAnalysis -lclangARCMigrate -lclangRewrite -lclangRewriteFrontend -lclangEdit -lclangAST -lclangLe
+...
+    180  cat <<EOF>> testfile
+    again
+    EOF
+
+    181  cat testfile
+    182  history
+
+
+

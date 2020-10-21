@@ -1,0 +1,8 @@
+ubuntu@ip-172-31-46-156:~$ mkdir simple_lkm
+ubuntu@ip-172-31-46-156:~$ cd simple_lkm/
+ubuntu@ip-172-31-46-156:~/simple_lkm$ vim simple_module.c
+ubuntu@ip-172-31-46-156:~/simple_lkm$ echo "obj-m := simple_module.o" > makefile
+ubuntu@ip-172-31-46-156:~/simple_lkm$ ls
+Makefile  simple_module.c
+
+ubuntu@ip-172-31-46-156:~/simple_lkm$ make -C /lib/modules/$(uname -r)/build M=$PWD modules

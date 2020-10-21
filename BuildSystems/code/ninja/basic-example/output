@@ -1,0 +1,21 @@
+$ ls
+build.ninja  main.cpp
+
+$ cat main.cpp
+#include <iostream>
+
+int main(int argc, char** argv){
+
+    std::cout << "Hello World!" << std::endl;
+
+    return 0;
+}
+
+$ ninja
+[2/2] g++ -lstdc++ main.o -o output
+
+$ ls
+build.ninja  main.cpp  main.o  output.exe
+
+$ ./output.exe
+Hello World!

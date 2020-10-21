@@ -1,0 +1,7 @@
+$ echo "export ARCH=arm" >> ~/export_compiler
+$ echo "export PATH=~/gcc-linaro/bin/:$PATH" >> ~/export_compiler
+$ echo "export CROSS_COMPILE=arm-linux-gnueabihf-" >> ~/export_compiler
+
+
+$ source ~/export_compiler
+

@@ -1,0 +1,2 @@
+# bitbake <recipe-image> -c poputlate_sdk
+ahmed@Sabry:~/TheYoctoProject/poky/build$ bitbake example-image -c populate_sdk

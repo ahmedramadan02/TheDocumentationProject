@@ -1,0 +1,100 @@
+poky
+├── bitbake
+│   ├── bin
+│   ├── contrib
+│   ├── doc
+│   └── lib
+├── build
+│   ├── cache
+│   ├── conf
+│   ├── downloads
+│   ├── sstate-cache
+│   ├── tmp
+│   └── workspace
+├── documentation
+│   ├── adt-manual
+│   ├── bsp-guide
+│   ├── dev-manual
+│   ├── kernel-dev
+│   ├── mega-manual
+│   ├── profile-manual
+│   ├── ref-manual
+│   ├── sdk-manual
+│   ├── template
+│   ├── toaster-manual
+│   ├── tools
+│   └── yocto-project-qs
+├── meta
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── lib
+│   ├── recipes-bsp
+│   ├── recipes-connectivity
+│   ├── recipes-core
+│   ├── recipes-devtools
+│   ├── recipes-extended
+│   ├── recipes-gnome
+│   ├── recipes-graphics
+│   ├── recipes-kernel
+│   ├── recipes-lsb4
+│   ├── recipes-multimedia
+│   ├── recipes-rt
+│   ├── recipes-sato
+│   ├── recipes-support
+│   └── site
+├── meta-mylayer
+│   ├── conf
+│   └── recipes-example
+├── meta-poky
+│   ├── classes
+│   ├── conf
+│   └── recipes-core
+├── meta-raspberrypi
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── recipes-bsp
+│   ├── recipes-connectivity
+│   ├── recipes-core
+│   ├── recipes-devtools
+│   ├── recipes-graphics
+│   ├── recipes-kernel
+│   ├── recipes-multimedia
+│   └── scripts
+├── meta-selftest
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── lib
+│   └── recipes-test
+├── meta-skeleton
+│   ├── conf
+│   ├── recipes-core
+│   ├── recipes-kernel
+│   ├── recipes-multilib
+│   └── recipes-skeleton
+├── meta-yocto
+│   └── conf
+├── meta-yocto-bsp
+│   ├── conf
+│   ├── lib
+│   ├── recipes-bsp
+│   ├── recipes-core
+│   ├── recipes-graphics
+│   └── recipes-kernel
+├── rpi-build
+│   ├── cache
+│   ├── conf
+│   ├── downloads
+│   ├── sstate-cache
+│   └── tmp
+└── scripts
+    ├── contrib
+    ├── lib
+    ├── native-intercept
+    ├── postinst-intercepts
+    ├── pybootchartgui
+    └── tiny
+
+97 directories

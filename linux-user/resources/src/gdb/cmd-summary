@@ -1,0 +1,4 @@
+(gdb) info register rip
+rip            0x401574            0x401574 <main(int, char**)+20>
+(gdb) i r rip
+rip            0x401574            0x401574 <main(int, char**)+20>

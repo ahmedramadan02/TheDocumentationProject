@@ -1,0 +1,12 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ devtool add sayhello https://github.com/ahmedramadan02/yocto-test.git
+NOTE: Using default source tree path /home/ahmed/TheYoctoProject/poky/build/workspace/sources/sayhello
+NOTE: Recipe /home/ahmed/TheYoctoProject/poky/build/workspace/recipes/sayhello/sayhello_git.bb has been automatically created; further editing may be required to make it fully functional
+
+# And you might notice that the following is created
+ahmed@Sabry:~/TheYoctoProject/poky/build$ cd workspace/
+ahmed@Sabry:~/TheYoctoProject/poky/build/workspace$ ls
+appends  conf  README  recipes  sources
+ahmed@Sabry:~/TheYoctoProject/poky/build/workspace$ ls recipes/sayhello/
+sayhello_git.bb
+ahmed@Sabry:~/TheYoctoProject/poky/build/workspace$ ls sources/sayhello/
+CMakeLists.txt  LICENSE  main.c  README.md

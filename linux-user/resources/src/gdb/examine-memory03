@@ -1,0 +1,6 @@
+(gdb) x/4i $rip
+=> 0x401574 <main(int, char**)+20>:     movl   $0x0,-0x4(%rbp)
+   0x40157b <main(int, char**)+27>:     cmpl   $0x9,-0x4(%rbp)
+   0x40157f <main(int, char**)+31>:     jg     0x401593 <main(int, char**)+51>
+   0x401581 <main(int, char**)+33>:     lea    0x2a78(%rip),%rcx        # 0x404000
+(gdb)

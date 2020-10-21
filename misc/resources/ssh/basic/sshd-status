@@ -1,0 +1,17 @@
+ubuntu@ip-172-31-46-156:/etc/ssh$ systemctl status sshd
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Sat 2020-02-29 13:24:14 UTC; 39min ago
+ Main PID: 961 (sshd)
+    Tasks: 1 (limit: 1152)
+   CGroup: /system.slice/ssh.service
+           └─961 /usr/sbin/sshd -D
+
+
+Or you can indirectly use
+
+ubuntu@ip-172-31-46-156:~$ ps -ef | grep sshd
+root       961     1  0 13:24 ?        00:00:00 /usr/sbin/sshd -D
+root      8871   961  0 13:32 ?        00:00:00 sshd: ubuntu [priv]
+ubuntu    9006  8871  0 13:32 ?        00:00:00 sshd: ubuntu@pts/0
+ubuntu    9029  9012  0 13:33 pts/0    00:00:00 grep --color=auto sshd

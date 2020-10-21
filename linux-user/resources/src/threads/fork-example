@@ -1,0 +1,23 @@
+#define CHILD 0
+main(){
+
+	int fd;
+	char buf[2];
+	pid_t pid;
+	int childstatus;
+	fd = open("./test",0_RDONLY);
+	pid= fork();
+	if (pid == CHILD){
+		read(fd,buf,2); // here the child is delivered the file with open state
+		printf("in child %c\n",buf[0]); //output: a
+		printf("in child %c\n",buf[1]); //output: b
+		close(fd); //here the Copy-On-Write been triggered, copy the fd and close it
+	}else{
+		//parent
+		wait(&childstatus); //suspend the parent till child completes
+		read(fd,buf,2); //here will read from the original file descriptor, which the index shifted by 2 
+		printf("in parent %c\n",buf[0]); //output: c
+		printf("in parent %c\n",buf[1]); //output: d
+		close(fd);	
+	}	
+}

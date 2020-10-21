@@ -1,0 +1,4 @@
+asmlinkage long sys_newcall(void){
+	printk(KERN_INFO "\nnew call by process %s with pid %d\n", current->comm, current->pid);
+	return 0;
+}

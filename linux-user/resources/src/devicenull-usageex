@@ -1,0 +1,4 @@
+ubuntu@ip-172-31-46-156:~$ grep -r power /sys/ 2>/dev/null
+/sys/module/pcie_aspm/parameters/policy:[default] performance powersave powersupersave
+
+ubuntu@ip-172-31-46-156:~$

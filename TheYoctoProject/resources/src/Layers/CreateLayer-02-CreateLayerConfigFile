@@ -1,0 +1,14 @@
+# conf and classes directory added to BBPATH
+BBPATH .= ":${LAYERDIR}"
+
+# recipes-* directories added to BBFILES
+BBFILES += "${LAYERDIR}/recipes-*/*/*.bb \
+${LAYERDIR}/recipe-*/*/*.bbappend"
+
+# this varaible is used to set the layer name
+BBFILE_COLLECTIONS += "mylayer"
+#used to match files in BBFILE, here it's used to match within the layer path
+BBFILE_PATTERN_mylayer = "^${LAYERDIR}/" 
+
+# Assign recipes, this is helpful when the same recipe in mulitple layers and allows you to choose the layer that takes precedence, "overriding recipes"
+BBFILE_PRIORITY_mylayer = "6"

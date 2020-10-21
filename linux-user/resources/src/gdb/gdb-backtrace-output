@@ -1,0 +1,8 @@
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000000667 in main(int, char**) at example.cpp:14
+2       breakpoint     keep y   0x000000000000064d in func1() at example.cpp:8
+        bt
+        continue
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffe508) at example.cpp:14
+14                      for(i=0; i < 10; i++)

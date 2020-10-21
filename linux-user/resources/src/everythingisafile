@@ -1,0 +1,16 @@
+$ touch file
+$ ls -ld file
+# Normal Device file
+-rw-rw-r-- 1 root root 0 Jan 10 12:52 file
+
+$ ls -ld /dev/null
+# Character device file 
+crw------- 1 root root 10, 165 Jan  4 10:13 /dev/null
+
+$ ls -ld /dev/sda
+# Block device file
+brw-rw---- 1 root root 8, 0 Jan  4 10:12 /dev/sda
+
+$ ls -ld /dev/log
+# Local Socket Device file
+srw-rw-rw- 1 root root 0 Jan  4 10:13 /dev/log

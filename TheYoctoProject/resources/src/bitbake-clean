@@ -1,0 +1,1 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ bitbake -c clean example-image

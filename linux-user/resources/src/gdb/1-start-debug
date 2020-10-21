@@ -1,0 +1,3 @@
+$ gdb -q ./output.exe
+Reading symbols from ./output.exe...done.
+(gdb)

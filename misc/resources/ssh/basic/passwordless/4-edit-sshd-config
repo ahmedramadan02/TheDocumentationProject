@@ -1,0 +1,1 @@
+ubuntu@ip-172-31-46-156:~$ sudo vi /etc/ssh/sshd_config

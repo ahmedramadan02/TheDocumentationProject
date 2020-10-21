@@ -1,0 +1,34 @@
+aramadan@CAI1-L11666 MINGW64 ~
+$ ls -l
+total 7
+-rw-r--r-- 1 aramadan VNET+Group(513) 2610 Feb 29 16:24 aws-ubuntu
+-rw-r--r-- 1 aramadan VNET+Group(513)  574 Feb 29 16:24 aws-ubuntu.pub
+-rw-r--r-- 1 aramadan VNET+Group(513)   11 Feb 29 14:21 file
+-rw-r--r-- 1 aramadan VNET+Group(513)   20 Feb 29 21:49 testfile
+|[-][-][-][-][------] [-------------]
+| |  |  |  |    |       |       
+| |  |  |  |    |       +-----------> Group
+| |  |  |  |    +-------------------> Owner
+| |  |  |  +------------------------> Indicates # of files inside directory
+| |  |  +---------------------------> Others Permissions
+| |  +------------------------------> Group Permissions
+| +---------------------------------> Owner Permissions
++-----------------------------------> File Type (7 Type in Linux)
+
+aramadan@CAI1-L11666 MINGW64 ~
+$ chmod u-w testfile
+
+aramadan@CAI1-L11666 MINGW64 ~
+$ ls -l
+total 7
+-rw-r--r-- 1 aramadan VNET+Group(513) 2610 Feb 29 16:24 aws-ubuntu
+-rw-r--r-- 1 aramadan VNET+Group(513)  574 Feb 29 16:24 aws-ubuntu.pub
+-rw-r--r-- 1 aramadan VNET+Group(513)   11 Feb 29 14:21 file
+-r--r--r-- 1 aramadan VNET+Group(513)   20 Feb 29 21:49 testfile
+
+aramadan@CAI1-L11666 MINGW64 ~
+$ chmod g+w testfile
+
+aramadan@CAI1-L11666 MINGW64 ~
+$ chmod o+w testfile
+

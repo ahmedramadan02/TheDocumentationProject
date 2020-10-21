@@ -1,0 +1,7 @@
+ubuntu@ip-172-31-46-156:~$ cd /proc
+ubuntu@ip-172-31-46-156:/proc$ find . -name ip_forward 2>/dev/null
+./sys/net/ipv4/ip_forward
+ubuntu@ip-172-31-46-156:/proc$ cat ./sys/net/ipv4/ip_forward
+0
+ubuntu@ip-172-31-46-156:/proc$
+

@@ -1,0 +1,134 @@
+poky
+├── bitbake
+│   ├── bin
+│   ├── contrib
+│   │   └── vim
+│   ├── doc
+│   │   ├── bitbake-user-manual
+│   │   ├── template
+│   │   └── tools
+│   └── lib
+│       ├── bb
+│       ├── bblayers
+│       ├── bs4
+│       ├── ply
+│       ├── progressbar
+│       ├── prserv
+│       ├── __pycache__
+│       └── toaster
+├── build
+│   ├── cache
+│   ├── conf
+│   ├── downloads
+│   ├── sstate-cache
+│   ├── tmp
+│   │   ├── buildstats
+│   │   ├── cache
+│   │   ├── deploy
+│   │   ├── log
+│   │   ├── sstate-control
+│   │   ├── stamps
+│   │   ├── sysroots
+│   │   ├── sysroots-components
+│   │   ├── sysroots-uninative
+│   │   └── work
+│   └── workspace
+│       ├── appends
+│       ├── conf
+│       ├── recipes
+│       └── sources
+├── documentation
+├── meta
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── lib
+│   ├── recipes-bsp
+│   ├── recipes-connectivity
+│   ├── recipes-core
+│   ├── recipes-devtools
+│   ├── recipes-extended
+│   ├── recipes-gnome
+│   ├── recipes-graphics
+│   ├── recipes-kernel
+│   ├── recipes-lsb4
+│   ├── recipes-multimedia
+│   ├── recipes-rt
+│   ├── recipes-sato
+│   ├── recipes-support
+│   └── site
+├── meta-mylayer
+│   ├── conf
+│   └── recipes-example
+│       ├── example
+│       └── images
+├── meta-poky
+│   ├── classes
+│   ├── conf
+│   └── recipes-core
+├── meta-raspberrypi
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── recipes-bsp
+│   ├── recipes-connectivity
+│   ├── recipes-core
+│   ├── recipes-devtools
+│   ├── recipes-graphics
+│   ├── recipes-kernel
+│   ├── recipes-multimedia
+│   └── scripts
+├── meta-selftest
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── lib
+│   └── recipes-test
+├── meta-skeleton
+│   ├── conf
+│   ├── recipes-core
+│   ├── recipes-kernel
+│   ├── recipes-multilib
+│   └── recipes-skeleton
+├── meta-yocto
+│   └── conf
+├── meta-yocto-bsp
+│   ├── conf
+│   ├── lib
+│   │   └── oeqa
+│   ├── recipes-bsp
+│   ├── recipes-core
+│   ├── recipes-graphics
+│   └── recipes-kernel
+├── rpi-build
+│   ├── cache
+│   ├── conf
+│   ├── downloads
+│   ├── sstate-cache
+│   └── tmp
+│       ├── buildstats
+│       ├── cache
+│       ├── deploy
+│       ├── log
+│       ├── sstate-control
+│       ├── stamps
+│       ├── sysroots
+│       ├── sysroots-components
+│       ├── sysroots-uninative
+│       ├── work
+│       └── work-shared
+└── scripts
+    ├── contrib
+    │   ├── bb-perf
+    │   └── python
+    ├── lib
+    │   ├── bsp
+    │   ├── devtool
+    │   ├── __pycache__
+    │   ├── recipetool
+    │   └── wic
+    ├── native-intercept
+    ├── postinst-intercepts
+    ├── pybootchartgui
+    │   └── pybootchartgui
+    └── tiny

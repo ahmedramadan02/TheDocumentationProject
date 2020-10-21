@@ -1,0 +1,9 @@
+ahmed@Sabry:~/TheYoctoProject/poky/meta-mylayer$ cd recipes-example/
+ahmed@Sabry:~/TheYoctoProject/poky/meta-mylayer/recipes-example$ mkdir images
+ahmed@Sabry:~/TheYoctoProject/poky/meta-mylayer/recipes-example$ ls ../../meta/recipes-core/images/
+build-appliance-image            core-image-minimal-dev.bb
+build-appliance-image_15.0.0.bb  core-image-minimal-initramfs.bb
+core-image-base.bb               core-image-minimal-mtdutils.bb
+core-image-minimal.bb
+
+ahmed@Sabry:~/TheYoctoProject/poky/meta-mylayer/recipes-example$ cp ../../meta/recipes-core/images/core-image-minimal-dev.bb images/example-image.bb

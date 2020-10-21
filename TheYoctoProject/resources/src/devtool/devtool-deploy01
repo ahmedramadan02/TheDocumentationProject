@@ -1,0 +1,1 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ vim ../meta-mylayer/recipes-example/images/example-image.bb 

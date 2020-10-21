@@ -1,0 +1,6 @@
+ubuntu@ip-172-31-46-156:~$ cd /
+ubuntu@ip-172-31-46-156:/$ ls
+bin   home            lib64       opt   sbin  tmp      vmlinuz.old
+boot  initrd.img      lost+found  proc  snap  usr
+dev   initrd.img.old  media       root  srv   var
+etc   lib             mnt         run   sys   vmlinuz

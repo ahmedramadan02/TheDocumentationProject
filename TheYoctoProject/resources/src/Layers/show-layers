@@ -1,0 +1,6 @@
+ahmed@Sabry:~/TheYoctoProject/poky$ bitbake-layers show-layers
+layer                 path                                      priority
+==========================================================================
+meta                  /home/ahmed/TheYoctoProject/poky/meta     5
+meta-poky             /home/ahmed/TheYoctoProject/poky/meta-poky  5
+meta-yocto-bsp        /home/ahmed/TheYoctoProject/poky/meta-yocto-bsp  5

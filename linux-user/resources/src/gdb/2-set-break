@@ -1,0 +1,42 @@
+$ gdb -q ./output.exe
+Reading symbols from ./output.exe...done.
+(gdb) break main # break keyword will set a break point in main, you can use also to set break at line number
+Breakpoint 1 at 0x401574: file example.cpp, line 4.
+(gdb) run # run the application
+Starting program: /c/Users/aramadan/Desktop/TheDocumentationProject/linux-user/resources/src/gdb/output.exe
+[New Thread 12904.0xb14]
+[New Thread 12904.0x2cb8]
+
+Thread 1 hit Breakpoint 1, main (argc=1, argv=0x1614e0) at example.cpp:4
+4           for(i=0; i < 10; i++)
+(gdb) continue # continue to the next point
+Continuing.
+Hello, world!
+
+$ gdb -q ./output.exe
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+ModuleNotFoundError: No module named 'libstdcxx'
+/etc/gdbinit:6: Error in sourced command file:
+Error while executing Python code.
+Reading symbols from ./output.exe...done.
+(gdb) break main
+Breakpoint 1 at 0x401574: file example.cpp, line 4.
+(gdb) run
+Starting program: /c/Users/aramadan/Desktop/TheDocumentationProject/linux-user/resources/src/gdb/output.exe
+[New Thread 12904.0xb14]
+[New Thread 12904.0x2cb8]
+
+Thread 1 hit Breakpoint 1, main (argc=1, argv=0x1614e0) at example.cpp:4
+4           for(i=0; i < 10; i++)
+
+(gdb) continue
+Continuing.
+Hello, world!
+
+Hello, world!
+
+...
+
+[Inferior 1 (process 12904) exited normally]
+(gdb) quit

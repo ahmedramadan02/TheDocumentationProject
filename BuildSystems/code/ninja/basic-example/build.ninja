@@ -1,0 +1,15 @@
+# build.ninja
+cc     = g++
+cflags = -Wall
+lflags = -lstdc++
+
+rule compile
+  command = $cc $cflags -c $in -o $out
+
+rule link
+  command = $cc $lflags $in -o $out
+
+build main.o: compile main.cpp
+build output: link main.o
+
+default output

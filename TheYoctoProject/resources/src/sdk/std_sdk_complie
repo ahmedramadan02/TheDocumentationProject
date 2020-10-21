@@ -1,0 +1,26 @@
+ahmed@Sabry:~/TheYoctoProject/sources/simple_cmake$ cmake .
+-- The C compiler identification is GNU 6.4.0
+-- The CXX compiler identification is GNU 6.4.0
+-- Check for working C compiler: /home/ahmed/TheYoctoProject/std_sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc
+-- Check for working C compiler: /home/ahmed/TheYoctoProject/std_sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /home/ahmed/TheYoctoProject/std_sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++
+-- Check for working CXX compiler: /home/ahmed/TheYoctoProject/std_sdk/sysroots/x86_64-pokysdk-linux/usr/bin/arm-poky-linux-gnueabi/arm-poky-linux-gnueabi-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ahmed/TheYoctoProject/sources/simple_cmake
+ahmed@Sabry:~/TheYoctoProject/sources/simple_cmake$ make
+Scanning dependencies of target say_hello
+[ 50%] Building C object CMakeFiles/say_hello.dir/main.c.o
+[100%] Linking C executable say_hello
+[100%] Built target say_hello
+ahmed@Sabry:~/TheYoctoProject/sources/simple_cmake$ file say_hello 
+say_hello: ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.3, for GNU/Linux 3.2.0, BuildID[sha1]=d57bd0346f9171a1fb4e39659abf633792013f97, not stripped
+ahmed@Sabry:~/TheYoctoProject/sources/simple_cmake$

@@ -1,0 +1,9 @@
+ubuntu@ip-172-31-46-156:/boot$ which init
+/sbin/init
+ubuntu@ip-172-31-46-156:/boot$ ls -l /sbin/init
+lrwxrwxrwx 1 root root 20 Nov 15 15:01 /sbin/init -> /lib/systemd/systemd
+
+ubuntu@ip-172-31-46-156:/boot$ file /lib/systemd/systemd
+/lib/systemd/systemd: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), 
+dynamically linked, interpreter /lib64/l, for GNU/Linux 3.2.0, 
+BuildID[sha1]=71fba1bd4906a59ccc85c824532db6637358c964, stripped

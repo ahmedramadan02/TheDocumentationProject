@@ -1,0 +1,3 @@
+mkdir keys
+openssl genpkey -algorithm RSA -out keys/dev.key -pkeyopt rsa_keygen_bits:2048 -pkeyopt rsa_keygen_pubexp:65537
+openssl req -batch -new -x509 -key keys/dev.key -out keys/dev.crt

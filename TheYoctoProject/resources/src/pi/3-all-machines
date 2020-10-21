@@ -1,0 +1,12 @@
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ ls ../meta-raspberrypi/conf/machine/*.conf
+../meta-raspberrypi/conf/machine/raspberrypi0.conf
+../meta-raspberrypi/conf/machine/raspberrypi0-wifi.conf
+../meta-raspberrypi/conf/machine/raspberrypi2.conf
+../meta-raspberrypi/conf/machine/raspberrypi3-64.conf
+../meta-raspberrypi/conf/machine/raspberrypi3.conf
+../meta-raspberrypi/conf/machine/raspberrypi4-64.conf
+../meta-raspberrypi/conf/machine/raspberrypi4.conf
+../meta-raspberrypi/conf/machine/raspberrypi-cm3.conf
+../meta-raspberrypi/conf/machine/raspberrypi-cm.conf
+../meta-raspberrypi/conf/machine/raspberrypi.conf
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ 

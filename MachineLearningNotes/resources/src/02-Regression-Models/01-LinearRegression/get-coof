@@ -1,0 +1,2 @@
+print(lregressor.coef_)
+print(lregressor.intercept_)

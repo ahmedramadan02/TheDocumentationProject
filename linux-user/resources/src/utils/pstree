@@ -1,0 +1,11 @@
+ubuntu@ip-172-31-46-156:/boot$ pstree | head
+systemd-+-accounts-daemon---2*[{accounts-daemon}]
+        |-acpid
+        |-2*[agetty]
+        |-amazon-ssm-agen---7*[{amazon-ssm-agen}]
+        |-atd
+        |-cron
+        |-dbus-daemon
+        |-lvmetad
+        |-lxcfs---2*[{lxcfs}]
+        |-networkd-dispat---{networkd-dispat}

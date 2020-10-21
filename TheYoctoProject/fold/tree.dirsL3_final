@@ -1,0 +1,74 @@
+poky
+├── bitbake
+│   ├── bin
+│   ├── contrib
+│   ├── doc
+│   └── lib
+├── build
+│   ├── cache
+│   ├── conf
+│   ├── downloads
+│   ├── sstate-cache
+│   ├── tmp
+│   │   ├── buildstats
+│   │   ├── cache
+│   │   ├── deploy
+│   │   ├── log
+│   │   ├── sstate-control
+│   │   ├── stamps
+│   │   ├── sysroots
+│   │   ├── sysroots-components
+│   │   ├── sysroots-uninative
+│   │   └── work
+│   └── workspace
+│       ├── appends
+│       ├── conf
+│       ├── recipes
+│       └── sources
+├── documentation
+├── meta
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── lib
+│   ├── recipes-XX
+│   └── site
+├── meta-poky
+│   ├── classes
+│   ├── conf
+│   └── recipes-core
+├── meta-raspberrypi
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── recipes-XX
+│   └── scripts
+├── meta-selftest
+│   ├── classes
+│   ├── conf
+│   ├── files
+│   ├── lib
+│   └── recipes-test
+├── meta-skeleton
+│   ├── conf
+│   ├── recipes-XX
+├── meta-yocto
+│   └── conf
+├── meta-yocto-bsp
+│   ├── conf
+│   ├── lib
+│   ├── recipes-XX
+└── scripts
+    ├── contrib
+    │   ├── bb-perf
+    │   └── python
+    ├── lib
+    │   ├── bsp
+    │   ├── devtool
+    │   ├── recipetool
+    │   └── wic
+    ├── native-intercept
+    ├── postinst-intercepts
+    ├── pybootchartgui
+    │   └── pybootchartgui
+    └── tiny

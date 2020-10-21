@@ -1,0 +1,11 @@
+ubuntu@ip-172-31-46-156:~$ sysctl -a | grep kernel.panic
+kernel.panic = 0 # means the kernel will not reboot automatically if a node panics
+
+ubuntu@ip-172-31-46-156:~$ sudo sysctl -w kernel.panic=10
+kernel.panic = 10
+# means the system will reboot after 10 seconds if panic happened
+
+
+
+
+

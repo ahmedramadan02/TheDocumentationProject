@@ -1,0 +1,8 @@
+export ARCH=arm
+export PATH=~/gcc-linaro/bin/:$PATH
+export CROSS_COMPILE=arm-linux-gnueabihf-
+
+# In Linaro, for 64bit Raspberry pi set them as follow
+export ARCH=arm64
+export PATH=~/gcc-linaro/bin/:$PATH
+export CROSS_COMPILE=aarch64-linux-gnu-

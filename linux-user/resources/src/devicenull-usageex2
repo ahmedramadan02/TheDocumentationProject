@@ -1,0 +1,9 @@
+$ wget -O /dev/null http://releases.ubuntu.com/18.04.3/ubuntu-18.04.3-desktop-amd64.iso?_ga=2.53207274.318962755.1578946923-825586526.1578946923
+--2020-01-13 22:22:25--  http://releases.ubuntu.com/18.04.3/ubuntu-18.04.3-desktop-amd64.iso?_ga=2.53207274.318962755.1578946923-825586526.1578946923
+Resolving releases.ubuntu.com (releases.ubuntu.com)... 91.189.88.22, 91.189.88.166, 91.189.88.148, ...
+Connecting to releases.ubuntu.com (releases.ubuntu.com)|91.189.88.22|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2082816000 (1.9G) [application/x-iso9660-image]
+Saving to: `/dev/null'
+
+/dev/null                                  1%[>                                                                               ]  29.35M  2.34MB/s    eta 17m 52s

@@ -1,0 +1,22 @@
+#include <cstdio>
+#include <string>
+
+
+int main( int argc, char ** argv ) {
+    int i = 3; 
+
+    // A pointer to variable i (or stores
+    // address of i)
+    int *ptr = &i; 
+
+    // A reference (or alias) for i.    
+    int &ref = i;
+    
+    
+    int a = 5;
+    int b = 6;
+    int &ref = a;
+    
+    int &ref = b;  //references can't be re-aasigned, At this line it will show error as "multiple declaration is not all
+    return 0;
+}

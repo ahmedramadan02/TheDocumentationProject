@@ -1,0 +1,31 @@
+ahmed@Sabry:~/YoctoProject$ git clone git://git.yoctoproject.org/poky.git
+
+ahmed@Sabry:~/YoctoProject/poky$ ls
+bitbake               LICENSE.MIT    meta-skeleton      README.poky
+contrib               MEMORIAM       meta-yocto-bsp     README.qemu
+documentation         meta           oe-init-build-env  scripts
+LICENSE               meta-poky      README.hardware
+LICENSE.GPL-2.0-only  meta-selftest  README.OE-Core
+
+ahmed@Sabry:~/YoctoProject$ git fetch --tags
+ahmed@Sabry:~/YoctoProject$ git tag
+     1.1_M1.final
+     1.1_M1.rc1
+     1.1_M1.rc2
+     1.1_M2.final
+     1.1_M2.rc1
+        .
+        .
+        .
+     yocto-2.5
+     yocto-2.5.1
+     yocto-2.5.2
+     yocto-2.6
+     yocto-2.6.1
+     yocto-2.6.2
+     yocto-2.7
+     yocto_1.5_M5.rc8
+
+
+# Chechout a tag
+ahmed@Sabry:~/YoctoProject$ git checkout tags/yocto-3.0 

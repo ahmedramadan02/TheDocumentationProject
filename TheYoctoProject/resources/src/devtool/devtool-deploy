@@ -1,0 +1,11 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ devtool deploy-target -s -c sayhello root@192.168.7.2
+Parsing recipes..done.
+Warning: Permanently added '192.168.7.2' (RSA) to the list of known hosts.
+devtool_deploy.list                        100%   25     3.7KB/s   00:00    
+devtool_deploy.sh                          100% 1014   144.4KB/s   00:00    
+Warning: Permanently added '192.168.7.2' (RSA) to the list of known hosts.
+./
+./usr/
+./usr/bin/
+./usr/bin/say_hello
+NOTE: Successfully deployed /home/ahmed/TheYoctoProject/poky/build/tmp/work/armv5e-poky-linux-gnueabi/sayhello/1.0+git999-r0/image

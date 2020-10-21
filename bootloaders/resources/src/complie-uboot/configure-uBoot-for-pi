@@ -1,0 +1,7 @@
+# use the default configurations
+$ make rpi_defconfig # for Pi 1 use rpi_defconfig
+#compile the device tree
+$ 
+
+# or you can instead make you own configuration
+$ make menu_config

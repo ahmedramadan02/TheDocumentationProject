@@ -1,0 +1,4 @@
+ahmed@Sabry:~/TheYoctoProject/poky/rpi-build$ ls ../meta-raspberrypi/recipes-core/images/*.bb
+../meta-raspberrypi/recipes-core/images/rpi-basic-image.bb
+../meta-raspberrypi/recipes-core/images/rpi-hwup-image.bb
+../meta-raspberrypi/recipes-core/images/rpi-test-image.bb

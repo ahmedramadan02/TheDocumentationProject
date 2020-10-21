@@ -1,0 +1,28 @@
+# Some varaibles for the 0:2 is is the second partition in mcc0 interface 
+bootpart=0:2
+bootdir=/boot
+bootfile=zImage
+
+# The console is passed to the kernel to print the debug messages
+# at ttyO0 and with rate of 115200 (as our serial port configured)
+console=ttyO0,115200n8
+
+# Load addresses for fdt and kernel images
+fdtaddr=0x88000000
+loadaddr=0x82000000
+fdtfile=fdt-file.dtb
+
+#root file for the mmc device for loading the "rootfs" location
+mmcroot=/dev/mmcblk0p2 ro 
+
+# Args passed to kernel
+mmcargs=setenv bootargs console=${console}
+
+#Loading the FDT file into the fdt address
+loadfdt=load mmc ${bootpart} ${fdtaddr} ${bootdir}/${fdtfile}
+
+# Loading the image
+loadimage=load mmc ${bootpart} ${loadaddr} ${bootdir}/${bootfile}
+
+# the main uBoot command, it runs the above commands
+uenvcmd=if run loadfdt; then echo Loaded ${fdtfile}; if run loadimage; then run mmcargs; bootz ${loadaddr} - ${fdtaddr};

@@ -1,0 +1,13 @@
+aramadan@CAI1-L11666  /c/Users/aramadan/Desktop/cmake/build
+$ cmake --build .
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/aramadan/Desktop/cmake/build
+[ 50%] Built target foo
+Scanning dependencies of target cmake-test
+[ 75%] Linking CXX executable cmake-test.exe
+[100%] Built target cmake-test
+
+aramadan@CAI1-L11666  /c/Users/aramadan/Desktop/cmake/build
+$ ./cmake-test.exe
+Hello CMake from lib!

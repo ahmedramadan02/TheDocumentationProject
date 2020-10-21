@@ -1,0 +1,16 @@
+In this challenge, you are asked to:
+1. Specify the defination of the following varaibles
+CC, TARGET, LDFLAGS, CFLAGS, CSTD
+
+2. make the following basic targets
+all, clean, and debug
+
+3. make a target to extract the main.o file
+
+4. compile and output two files one with the debug info, and another one for the release
+then use the GNU Debugger "gdb command" to debug the output file  
+
+5. use "objdump" to dump main.o into "main_dump.txt"
+
+
+Note: that you will compile a C programs for x86 machine, and using the c99 c standard, the used compiler will be mingw32-gcc

@@ -1,0 +1,8 @@
+foo = $(bar) 
+bar = $(ugh)
+x := foo 
+y := $(x) bar
+
+ARCH := (shell arch)
+CWD  := (shell pwd)
+OS   := (shell uname)

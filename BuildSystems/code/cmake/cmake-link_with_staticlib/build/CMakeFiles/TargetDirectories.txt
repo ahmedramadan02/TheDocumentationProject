@@ -1,0 +1,6 @@
+C:/Users/aramadan/Desktop/cmake/build/CMakeFiles/cmake-test.dir
+C:/Users/aramadan/Desktop/cmake/build/CMakeFiles/edit_cache.dir
+C:/Users/aramadan/Desktop/cmake/build/CMakeFiles/rebuild_cache.dir
+C:/Users/aramadan/Desktop/cmake/build/foo/CMakeFiles/foo.dir
+C:/Users/aramadan/Desktop/cmake/build/foo/CMakeFiles/edit_cache.dir
+C:/Users/aramadan/Desktop/cmake/build/foo/CMakeFiles/rebuild_cache.dir

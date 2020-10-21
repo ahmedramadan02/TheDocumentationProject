@@ -1,0 +1,13 @@
+ubuntu@ip-172-31-46-156:~$ ls -l  /dev/null
+crw-rw-rw- 1 root root 1, 3 Jan 17 08:28 /dev/null
+
+ubuntu@ip-172-31-46-156:~$ ls -l /dev | grep ^c | grep " 1,"
+
+crw-rw-rw- 1 root root      1,   7 Jan 17 08:28 full
+crw-r--r-- 1 root root      1,  11 Jan 17 08:28 kmsg
+crw-r----- 1 root kmem      1,   1 Jan 17 08:28 mem
+crw-rw-rw- 1 root root      1,   3 Jan 17 08:28 null
+crw-r----- 1 root kmem      1,   4 Jan 17 08:28 port
+crw-rw-rw- 1 root root      1,   8 Jan 17 08:28 random
+crw-rw-rw- 1 root root      1,   9 Jan 17 08:28 urandom
+crw-rw-rw- 1 root root      1,   5 Jan 17 08:28 zero

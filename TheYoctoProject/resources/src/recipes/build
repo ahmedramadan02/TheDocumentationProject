@@ -1,0 +1,9 @@
+ahmed@Sabry:~/TheYoctoProject/poky/build$ bitbake hello-0.1
+
+ahmed@Sabry:~/TheYoctoProject/poky/build$ cd  tmp/deploy/rpm/
+
+# You will find the different files of the hello bin
+ahmed@Sabry:~/TheYoctoProject/poky/build/tmp/deploy/rpm$ find -name hello*
+./i586/hello-0.1-dev-1.0-r0.i586.rpm
+./i586/hello-0.1-dbg-1.0-r0.i586.rpm
+./i586/hello-0.1-1.0-r0.i586.rpm

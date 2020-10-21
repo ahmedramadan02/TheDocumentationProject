@@ -1,0 +1,14 @@
+If ($(OS), Windows\_NT)
+    RM = del /s
+    MV = move /Y
+else
+    RM = rm –f
+    MV = mv –force
+Endif
+	
+ifeq ( $(PLATFORM), MSP )
+    CPU = cortex-m4
+endif
+
+From commandline:
+Then you can use this: 	"make all PLATFORM=MSP"

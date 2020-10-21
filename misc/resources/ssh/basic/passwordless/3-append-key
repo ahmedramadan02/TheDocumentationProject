@@ -1,0 +1,12 @@
+ubuntu@ip-172-31-46-156:~$ cat aws-ubuntu.pub >> ~/.ssh/authorized_keys
+
+# and make sure that authorized_keys has 755 permissions
+ubuntu@ip-172-31-46-156:~$ ls -la .ssh
+total 12
+drwx------  2 ubuntu ubuntu 4096 Jan 10 21:59 .
+drwxr-xr-x 18 ubuntu ubuntu 4096 Feb 29 19:06 ..
+-rw-------  1 ubuntu ubuntu  965 Feb 29 18:38 authorized_keys
+
+# Otherwise give them to it, otherwise it will not work and try!
+ubuntu@ip-172-31-46-156:~$ chmod 755 .ssh/authorized_keys
+

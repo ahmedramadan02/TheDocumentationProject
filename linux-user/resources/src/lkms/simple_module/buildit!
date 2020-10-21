@@ -1,0 +1,6 @@
+Run the following commands in the same directory as the simple_module.c
+echo "obj-m := simple_module.o" > Makefile
+make -C /lib/modules/$(uname -r)/build M=$PWD modules
+insmod ./simple_module.ko
+rmmod simple_module
+dmesg | tail
