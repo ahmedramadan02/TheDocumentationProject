@@ -63,7 +63,11 @@
 \newtcolorbox{mybox}[1][]{my box, #1}
 
 \begin{document}
-\maketitle
+\textbf{Disclaimer}: This material is a study notes, so for any technical issues please contact me to resolve it periodically.
+
+\begin{minipage}{\textwidth}
+    \maketitle
+\end{minipage}
 \tableofcontents{}
 \section{Introducing Yocto}
 \subsection{What is the Yocto Project ?}
@@ -92,6 +96,25 @@ The purpose of Poky is to build the components needed for an embedded Linux prod
     \item A root filesystem image
     \item Toolchains and software development kits (SDKs) for application development.
 \end{itemize}
+
+\subsection{Poky workflow}
+
+\begin{center}
+  \includegraphics[scale=0.60]{./resources/img/yocto-environment.png}
+\end{center}
+
+\begin{enumerate}
+  \item \textbf{do\_fetch} - Downloads the source files and additional artifacts needed to construct a specific SW component. The location can be a remote repository or even a local directory. This location is configured using the SRC\_URI variable of a recipe file.
+  \item \textbf{do\_unpack} - If the downloaded sources in the previous step are compressed, they are decompressed in this step.
+  \item \textbf{do\_patch} - If the source needs to be modified (e.g. due to a known bug), it can be patched in this step using the patch file indicated in the corresponding recipe.
+  \item \textbf{do\_configure} - In this phase, the build configuration is defined (e.g. build files are generated, directives are set, …) as a preparation for the coming task.
+  \item \textbf{do\_compile} - This is the task where the sources are built and linked to produce deployable binaries.
+  \item \textbf{do\_install} - In this task, the produced binaries and any additional files (e.g. images, database files, textual configuration files, …) are grouped together in a folder structure specified by the user (e.g. binaries go to <package>/bin, config. files go to <package>/etc).
+  \item \textbf{do\_package} - The packaging operation converts the previously generated folder into a known package format (e.g. .rpm, .deb, ...) to be used by package management applications.
+  \\And once all needed components are packaged, the following tasks are executed for the image:
+  \item \textbf{do\_rootfs} - Builds a root filesystem that includes the bootloader, the kernel binary, the device tree blob in addition to all packages that need to be deployed in the system.
+  \item \textbf{do\_image} - Finally the generated filesystem is converted into a predefined image format (e.g. .sdcard to be deployed onto a SD Card, hard drive image, tarball files, etc…)
+\end{enumerate}
 
 \subsection{Building a minimal image using Poky}
 So, let's have a quick example on building a full Linux distro using Poky, it's as simple as the following four steps:
@@ -185,7 +208,7 @@ Note: You can get all the tree-like structure by using Linux \textit{tree} comma
 
 In any Poky version, you will find the following basic layers:
 \begin{itemize}
-    \item meta: This directory contains the OpenEmbedded-Core metadata
+    \item meta: This directory contains the OpenEmbedded-Core metadata which have the base layers of all the build system, for example the basic tasks like \textbf{do\_fetch}, \textbf{do\_compile}, ... are defined in \textbf{base.bbclass} in the OE meta folders.
     \item meta-yocto: This contains Poky's distribution-specific metadata
     \item meta-yocto-bsp: This contains metadata for the reference hardware boards
 \end{itemize}
@@ -193,6 +216,16 @@ In any Poky version, you will find the following basic layers:
 The initial poky build system only supports the following BSP targets, and the virtualized emulators provided by OE-Core, and of course other layers can be included, or defined and customized, you can refer to creating \nameref{simple-custom-layers} section.
 
 \lstinputlisting[caption=Supported virtualized emulators]{resources/src/install/supported-emulators}
+
+\subsection{Basic meta files types}
+Yocto has serval files types to support extending your layer:
+\begin{itemize}
+  \item \textbf{.bbclass files}: Class files contain information that is useful to share between recipes files. An example is the autotools class, which contains common settings for any application that Autotools uses.
+  \item \textbf{.bb recipe files}: the files that have the .bb suffix are "recipes" files. In general, a recipe contains information about a single piece of software, and each recipe describes a set of meta info and tasks to do deal with this software unit. 
+  \item \textbf{.bbappend files}: You can use a .bbappend file in your layer to make additions or changes to the content of another layer's recipe without having to copy the other layer's recipe into your layer. Your .bbappend file resides in your layer, while the main .bb recipe file to which you are appending Metadata resides in a different layer.
+  \item \textbf{.conf files}: The configuration files define various configuration variables that govern the OpenEmbedded build process.
+\end{itemize}
+
 
 \subsection{Basic configuration files}
 Finally as an introduction to \textit{Yocto}, we can list some important configuration files which we will deal with a lot in our further sections.
@@ -209,7 +242,12 @@ Finally as an introduction to \textit{Yocto}, we can list some important configu
 \section{Writing Layers, Recipes and using the application SDKs}
 \subsection{Simple Custom Layer}
 \label{simple-custom-layers}
-In order to write some recipes, it's needed first to create our custom layer, we will create it in two different ways, and we will call it \textbf{my-layer}.
+A Yocto layer basically contains set of recipes to describe the workflow for your application building.\\
+\begin{center}
+  \includegraphics[scale=0.60]{./resources/img/basic-blocks.png}
+\end{center}
+
+So in order to write some recipes, it's needed first to create our custom layer, we will create it in two different ways, and we will call it \textbf{my-layer}.
 
 A. You can create a layer automatically by using \textbf{\textit{create-layer}} sub-command, and you need respect the yocto project naming by creating your layer name as follow \textbf{\textit{meta-\textless your-layer-name\textgreater}}, as it helps bitbake while parsing your recipes.
   \lstinputlisting[caption=bitbake-layers create-layer]{resources/src/Layers/CreateLayer00}
@@ -281,6 +319,10 @@ To add the output of this recipe to our custom image, you need to add the your r
 \textbf{IMAGE\_INSTALL\_append = " hello-0.1"}\\
 
 or you can append it to the images file of your layer in \textbf{meta-mylayer/recipes-example/images/example-image.bb}
+
+\begin{mybox}[title={Note: Recipes programming commands}]
+  A normal bitbake recipes commands are a mix of python and bash commands!  
+\end{mybox}
 
 \begin{center}
   \includegraphics[scale=0.60]{./resources/img/add-hello-to-image-recipe.png}
@@ -476,6 +518,8 @@ In order to develop an applications for your target, you might use one of the fo
 
 \end{enumerate}
 
+\section{Packaging}
+
 
 \section{building an image for Raspberry Pi Board}
 In the following section we will make a simple steps to have a ready to run image for raspberry pi. also we will be using it's cross-toolchain in order to build our pi applications, then to see the different ways to deploy the resultant image to run on our pi.
@@ -577,10 +621,5 @@ And as you will see that we kind of repeating the previous sections to have this
 
 \section{Appendix}
 \subsection{Debugging the build messages}
-
-\subsection{The Yocto Project Workflow}
-\begin{center}
-  \includegraphics[scale=0.60]{./resources/img/yocto_workflow.jpg}
-\end{center}
 
 \end{document}

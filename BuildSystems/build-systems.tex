@@ -41,7 +41,12 @@
 }
 
 \begin{document}
-\maketitle
+\textbf{Disclaimer}: This material is a study notes, so for any technical issues please contact me to resolve it periodically.
+
+\begin{minipage}{\textwidth}
+    \maketitle
+\end{minipage}
+
 \tableofcontents{}
 \section{The make utility and the make files}
 It's an automatic build system, that drives the complier and generates an output executable files. and you need to know that in some situations in order to install a software in Linux, you just need to build it first from its source code.
@@ -49,7 +54,7 @@ It's an automatic build system, that drives the complier and generates an output
 \subsection{The build process}
 
 \begin{center}
-\includegraphics[scale=0.50]{./resources/imgs/build-process.png}
+\includegraphics[scale=0.50]{./resources/imgs/build-process2.png}
 \end{center}
 
 \subsection{makefile simple script}
@@ -230,7 +235,7 @@ $ cmake -G 'MSYS Makefiles' ..
 
 Note: for a list of all the generators use \textit{\textbf{cmake -G}} 
 
-\subsubsection{Using the cmake to generate for Visual Studio}
+\subsubsection{Using the cmake to generate for Visual Studio Solutions}
 As we just discussed you can use \textit{cmake} to generate Visual Studio projects by specifying a certain generator. the next example will show that.
 \lstinputlisting[language=make, caption=building and linking with libraries]{./code/cmake/vs2015-log}
 

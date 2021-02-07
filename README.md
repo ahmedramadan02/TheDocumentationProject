@@ -10,6 +10,7 @@ The following topics are covered, and more on the road:
 6. Machine Learning notes (coming)
 7. Automotive security intro notes (coming)
 8. NetworkAnalysis using wireshark (coming)
+9. "EA_Models" folder which has a EAP model for the figures.
 
 For each topic you will find:
 1. tex file which can re-generate the document
